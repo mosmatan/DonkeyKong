@@ -1,4 +1,4 @@
-# Install script for directory: /Users/matanmoskovich/Desktop/Worms/lib/SDL_image
+# Install script for directory: /Users/matanmoskovich/Desktop/DonkeyKong/lib/SDL_image
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

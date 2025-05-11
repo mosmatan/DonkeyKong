@@ -62,7 +62,7 @@ set_target_properties(SDL3::SDL3-static PROPERTIES
 set_property(TARGET SDL3::SDL3-static APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(SDL3::SDL3-static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C;OBJC"
-  IMPORTED_LOCATION_DEBUG "/Users/matanmoskovich/Desktop/Worms/cmake-build-debug/lib/SDL/libSDL3.a"
+  IMPORTED_LOCATION_DEBUG "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/SDL/libSDL3.a"
   )
 
 # Make sure the targets which have been exported in some other

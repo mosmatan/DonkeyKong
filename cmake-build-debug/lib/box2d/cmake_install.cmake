@@ -1,4 +1,4 @@
-# Install script for directory: /Users/matanmoskovich/Desktop/Worms/lib/box2d
+# Install script for directory: /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/matanmoskovich/Desktop/Worms/cmake-build-debug/lib/box2d/src/cmake_install.cmake")
+  include("/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src/cmake_install.cmake")
 endif()
 

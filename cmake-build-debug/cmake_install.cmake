@@ -1,4 +1,4 @@
-# Install script for directory: /Users/matanmoskovich/Desktop/Worms
+# Install script for directory: /Users/matanmoskovich/Desktop/DonkeyKong
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/matanmoskovich/Desktop/Worms/cmake-build-debug/lib/SDL/cmake_install.cmake")
-  include("/Users/matanmoskovich/Desktop/Worms/cmake-build-debug/lib/SDL_image/cmake_install.cmake")
-  include("/Users/matanmoskovich/Desktop/Worms/cmake-build-debug/lib/box2d/cmake_install.cmake")
+  include("/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/SDL/cmake_install.cmake")
+  include("/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/SDL_image/cmake_install.cmake")
+  include("/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/cmake_install.cmake")
 
 endif()
 
@@ -60,6 +60,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/Users/matanmoskovich/Desktop/Worms/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

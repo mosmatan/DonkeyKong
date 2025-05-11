@@ -12,8 +12,14 @@ add_executable(BAGEL main.cpp
         bagel_cfg.h
         Pong.cpp
         Pong.h
-        Worms.cpp
-        Worms.h
+        Game.cpp
+        Game.h
+        Components.h
+        RenderSystem.cpp
+        RenderSystem.h
+        Background.h
+        MarioEntity.cpp
+        MarioEntity.h
 )
 
 set(SDL_STATIC ON)

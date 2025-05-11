@@ -1,4 +1,4 @@
-# Install script for directory: /Users/matanmoskovich/Desktop/Worms/lib/box2d/src
+# Install script for directory: /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/matanmoskovich/Desktop/Worms/cmake-build-debug/lib/box2d/src/libbox2dd.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src/libbox2dd.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libbox2dd.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libbox2dd.a")
     execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libbox2dd.a")
@@ -49,7 +49,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d/box2dConfig.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d/box2dConfig.cmake"
-         "/Users/matanmoskovich/Desktop/Worms/cmake-build-debug/lib/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig.cmake")
+         "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d/box2dConfig-*.cmake")
       if(_cmake_old_config_files)
@@ -62,24 +62,24 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/Users/matanmoskovich/Desktop/Worms/cmake-build-debug/lib/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/Users/matanmoskovich/Desktop/Worms/cmake-build-debug/lib/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src/CMakeFiles/Export/1f7e0de6fbfb5d20e365871ec89ce73e/box2dConfig-debug.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/box2d" TYPE FILE FILES
-    "/Users/matanmoskovich/Desktop/Worms/lib/box2d/src/../include/box2d/base.h"
-    "/Users/matanmoskovich/Desktop/Worms/lib/box2d/src/../include/box2d/box2d.h"
-    "/Users/matanmoskovich/Desktop/Worms/lib/box2d/src/../include/box2d/collision.h"
-    "/Users/matanmoskovich/Desktop/Worms/lib/box2d/src/../include/box2d/id.h"
-    "/Users/matanmoskovich/Desktop/Worms/lib/box2d/src/../include/box2d/math_functions.h"
-    "/Users/matanmoskovich/Desktop/Worms/lib/box2d/src/../include/box2d/types.h"
+    "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include/box2d/base.h"
+    "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include/box2d/box2d.h"
+    "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include/box2d/collision.h"
+    "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include/box2d/id.h"
+    "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include/box2d/math_functions.h"
+    "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include/box2d/types.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/Users/matanmoskovich/Desktop/Worms/cmake-build-debug/lib/box2d/src/box2dConfigVersion.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/box2d" TYPE FILE FILES "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src/box2dConfigVersion.cmake")
 endif()
 
