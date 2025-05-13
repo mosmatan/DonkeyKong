@@ -40,7 +40,7 @@ namespace donkeykong {
 
         // Box2D world
         b2WorldDef worldDef = b2DefaultWorldDef();
-        worldDef.gravity = {0,0};
+        worldDef.gravity = {0,9.8f};
         boxWorld = b2CreateWorld(&worldDef);
 
 

@@ -29,7 +29,7 @@ public:
         Position position{100,683};
 
         b2BodyDef marioBodyDef = b2DefaultBodyDef();
-        marioBodyDef.type = b2_kinematicBody;
+        marioBodyDef.type = b2_dynamicBody;
         marioBodyDef.position = {position.x / Game::BOX_SCALE, position.y / Game::BOX_SCALE};
         b2BodyId marioBody = b2CreateBody(Game::boxWorld, &marioBodyDef);
 
