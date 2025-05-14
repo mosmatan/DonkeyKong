@@ -10,24 +10,24 @@
 using  namespace bagel;
 namespace donkeykong {
 
-class Background : NoInstance{
+    class Background : NoInstance{
 
-public:
+    public:
 
-    static Entity createBackground(SDL_Renderer* ren, SDL_Texture* tex) {
+        static Entity createBackground(SDL_Renderer* /*ren*/, SDL_Texture* tex) {
 
-        auto entity =  Entity::create();
+            auto entity =  Entity::create();
 
-        entity.addAll(
-            Drawable{tex, {10, 365,230,270}, 3.f,3.f, true},
-            Position{175,150}
-        );
+            entity.addAll(
+                Drawable{tex, {10, 365,230,270}, 3.f,3.f, true},
+                Position{175,150}
+            );
 
-        return entity;
-    }
+            return entity;
+        }
 
 
-};
+    };
 
 } // donkeykong
 

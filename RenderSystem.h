@@ -6,7 +6,7 @@
 #define RENDERSYSTEM_H
 #include "bagel.h"
 #include "Components.h"
-#include "../../../../opt/homebrew/include/SDL3/SDL_render.h"
+#include <SDL3/SDL_render.h>
 
 using namespace bagel;
 

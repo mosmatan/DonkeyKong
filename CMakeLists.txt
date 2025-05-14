@@ -20,6 +20,7 @@ add_executable(BAGEL main.cpp
         Background.h
         MarioEntity.cpp
         MarioEntity.h
+        PhysicsSystem.h
 )
 
 set(SDL_STATIC ON)

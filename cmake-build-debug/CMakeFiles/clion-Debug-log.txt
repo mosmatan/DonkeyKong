@@ -1,14 +1,22 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/matanmoskovich/Desktop/DonkeyKong -B /Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug
--- Checking for module 'libusb-1.0>=1.0.16'
---   Package 'libusb-1.0' not found
+"C:\Program Files\JetBrains\CLion 2025.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\Admin\CLionProjects\DonkeyKong -B C:\Users\Admin\CLionProjects\DonkeyKong\cmake-build-debug
+CMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
 -- Could NOT find LibUSB (missing: LibUSB_LIBRARY LibUSB_INCLUDE_PATH) (found version "LibUSB_VERSION-NOTFOUND")
 -- 
 -- SDL3 was configured with the following options:
 -- 
--- Platform: Darwin-24.1.0
+-- Platform: Windows-10.0.26100
 -- 64-bit:   TRUE
--- Compiler: /Library/Developer/CommandLineTools/usr/bin/cc
--- Revision: SDL3-3.3.0-HEAD-HASH-NOTFOUND
+-- Compiler: C:/Program Files/JetBrains/CLion 2025.1.1/bin/mingw/bin/gcc.exe
+-- Revision: SDL3-3.3.0-d8f9785
 -- Vendor:   
 -- 
 -- Subsystems:
@@ -28,21 +36,21 @@
 --   SDL_ALSA                    (Wanted: OFF): OFF
 --   SDL_ALSA_SHARED             (Wanted: OFF): OFF
 --   SDL_ALTIVEC                 (Wanted: OFF): OFF
---   SDL_ARMNEON                 (Wanted: ON): ON
+--   SDL_ARMNEON                 (Wanted: OFF): OFF
 --   SDL_ASAN                    (Wanted: OFF): OFF
 --   SDL_ASSEMBLY                (Wanted: ON): ON
 --   SDL_ASSERTIONS              (Wanted: auto): auto
---   SDL_AVX                     (Wanted: OFF): OFF
---   SDL_AVX2                    (Wanted: OFF): OFF
---   SDL_AVX512F                 (Wanted: OFF): OFF
+--   SDL_AVX                     (Wanted: ON): ON
+--   SDL_AVX2                    (Wanted: ON): ON
+--   SDL_AVX512F                 (Wanted: ON): ON
 --   SDL_BACKGROUNDING_SIGNAL    (Wanted: OFF): OFF
 --   SDL_CCACHE                  (Wanted: OFF): OFF
 --   SDL_CLANG_TIDY              (Wanted: OFF): OFF
 --   SDL_CLOCK_GETTIME           (Wanted: OFF): OFF
---   SDL_COCOA                   (Wanted: ON): ON
+--   SDL_COCOA                   (Wanted: OFF): OFF
 --   SDL_DBUS                    (Wanted: OFF): OFF
 --   SDL_DEPS_SHARED             (Wanted: ON): OFF
---   SDL_DIRECTX                 (Wanted: OFF): OFF
+--   SDL_DIRECTX                 (Wanted: ON): ON
 --   SDL_DISKAUDIO               (Wanted: ON): ON
 --   SDL_DUMMYAUDIO              (Wanted: ON): ON
 --   SDL_DUMMYCAMERA             (Wanted: ON): ON
@@ -69,8 +77,8 @@
 --   SDL_LIBUDEV                 (Wanted: ON): OFF
 --   SDL_LIBURING                (Wanted: OFF): OFF
 --   SDL_LSX                     (Wanted: OFF): OFF
---   SDL_METAL                   (Wanted: ON): ON
---   SDL_MMX                     (Wanted: OFF): OFF
+--   SDL_METAL                   (Wanted: OFF): OFF
+--   SDL_MMX                     (Wanted: ON): ON
 --   SDL_OFFSCREEN               (Wanted: ON): ON
 --   SDL_OPENGL                  (Wanted: ON): ON
 --   SDL_OPENGLES                (Wanted: ON): ON
@@ -78,26 +86,26 @@
 --   SDL_OSS                     (Wanted: OFF): OFF
 --   SDL_PIPEWIRE                (Wanted: OFF): OFF
 --   SDL_PIPEWIRE_SHARED         (Wanted: OFF): OFF
---   SDL_PTHREADS                (Wanted: ON): ON
---   SDL_PTHREADS_SEM            (Wanted: ON): ON
+--   SDL_PTHREADS                (Wanted: OFF): OFF
+--   SDL_PTHREADS_SEM            (Wanted: OFF): OFF
 --   SDL_PULSEAUDIO              (Wanted: OFF): OFF
 --   SDL_PULSEAUDIO_SHARED       (Wanted: OFF): OFF
---   SDL_RENDER_D3D              (Wanted: OFF): OFF
---   SDL_RENDER_D3D11            (Wanted: OFF): OFF
---   SDL_RENDER_D3D12            (Wanted: OFF): OFF
+--   SDL_RENDER_D3D              (Wanted: ON): ON
+--   SDL_RENDER_D3D11            (Wanted: ON): ON
+--   SDL_RENDER_D3D12            (Wanted: ON): ON
 --   SDL_RENDER_GPU              (Wanted: ON): ON
---   SDL_RENDER_METAL            (Wanted: ON): ON
+--   SDL_RENDER_METAL            (Wanted: ON): OFF
 --   SDL_RENDER_VULKAN           (Wanted: ON): ON
 --   SDL_ROCKCHIP                (Wanted: OFF): OFF
---   SDL_RPATH                   (Wanted: ON): OFF
+--   SDL_RPATH                   (Wanted: OFF): OFF
 --   SDL_RPI                     (Wanted: OFF): OFF
 --   SDL_SNDIO                   (Wanted: OFF): OFF
 --   SDL_SNDIO_SHARED            (Wanted: OFF): OFF
---   SDL_SSE                     (Wanted: OFF): OFF
---   SDL_SSE2                    (Wanted: OFF): OFF
---   SDL_SSE3                    (Wanted: OFF): OFF
---   SDL_SSE4_1                  (Wanted: OFF): OFF
---   SDL_SSE4_2                  (Wanted: OFF): OFF
+--   SDL_SSE                     (Wanted: ON): ON
+--   SDL_SSE2                    (Wanted: ON): ON
+--   SDL_SSE3                    (Wanted: ON): ON
+--   SDL_SSE4_1                  (Wanted: ON): ON
+--   SDL_SSE4_2                  (Wanted: ON): ON
 --   SDL_SYSTEM_ICONV            (Wanted: OFF): OFF
 --   SDL_TESTS                   (Wanted: OFF): OFF
 --   SDL_TESTS_LINK_SHARED       (Wanted: OFF): OFF
@@ -105,7 +113,7 @@
 --   SDL_VIRTUAL_JOYSTICK        (Wanted: ON): ON
 --   SDL_VIVANTE                 (Wanted: OFF): OFF
 --   SDL_VULKAN                  (Wanted: ON): ON
---   SDL_WASAPI                  (Wanted: OFF): OFF
+--   SDL_WASAPI                  (Wanted: ON): ON
 --   SDL_WAYLAND                 (Wanted: OFF): OFF
 --   SDL_WAYLAND_LIBDECOR        (Wanted: OFF): OFF
 --   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: OFF): OFF
@@ -121,31 +129,27 @@
 --   SDL_X11_XSHAPE              (Wanted: OFF): OFF
 --   SDL_X11_XSYNC               (Wanted: OFF): OFF
 --   SDL_X11_XTEST               (Wanted: OFF): OFF
---   SDL_XINPUT                  (Wanted: OFF): OFF
+--   SDL_XINPUT                  (Wanted: ON): ON
 -- 
 --  Build Shared Library: OFF
 --  Build Static Library: ON
---  Build libraries as Apple Framework: OFF
--- 
--- If something was not detected, although the libraries
--- were installed, then make sure you have set the
--- CMAKE_C_FLAGS and CMAKE_PREFIX_PATH CMake variables correctly.
 -- 
 -- Configuring SDL3_image 3.3.0
--- SDL3_image: Using system libavif
--- Dynamic libavif: libavif.16.dylib
--- SDL3_image: Using system libwebp
--- Dynamic libwebpdemux: libwebpdemux.2.dylib
--- Dynamic libwebp: libwebp.7.dylib
+-- libavif-1.0 or compatible not found
+-- libavif NOT found
+-- Could NOT find TIFF (missing: TIFF_LIBRARY TIFF_INCLUDE_DIR) 
+-- libtiff NOT found
+-- Could NOT find webp (missing: webp_LIBRARY webp_INCLUDE_PATH webpdemux_LIBRARY webpdemux_INCLUDE_PATH) 
+-- libwebp NOT found
 -- SDL3_image backends:
--- - enabled:  stb imageio avif bmp gif jpg lbm pcx png pnm qoi svg tga tif webp xcf xpm xv
--- - disabled: wic jxl
--- CMake C compiler: AppleClang
--- CMake C++ compiler: AppleClang
--- CMake system name: Darwin
--- CMake host system processor: arm64
+-- - enabled:  stb bmp gif jpg lbm pcx png pnm qoi svg tga xcf xpm xv
+-- - disabled: imageio wic avif jxl tif webp
+-- CMake C compiler: GNU
+-- CMake C++ compiler: GNU
+-- CMake system name: Windows
+-- CMake host system processor: AMD64
 -- Box2D SIMD enabled
--- Box2D on Apple
--- Configuring done (0.3s)
--- Generating done (0.1s)
--- Build files have been written to: /Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug
+-- Box2D on MinGW
+-- Configuring done (0.6s)
+-- Generating done (0.2s)
+-- Build files have been written to: C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug
