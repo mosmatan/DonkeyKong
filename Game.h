@@ -11,6 +11,7 @@
 
 #include "RenderSystem.h"
 #include "PhysicsSystem.h"
+#include "PlatformEntity.h"
 
 namespace donkeykong {
 
@@ -45,6 +46,7 @@ namespace donkeykong {
 
         void gameLoop();
         void createEntities();
+        void createPlatforms();
 
     };
 

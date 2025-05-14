@@ -114,7 +114,11 @@ namespace donkeykong {
             auto bg = Background::createBackground(ren, tex);
             std::cout << "Background created with ID: " << bg.entity().id << std::endl;
 
+            // Create platforms based on the background image
+            createPlatforms();
+
             std::cout << "Creating Mario..." << std::endl;
+            // Position Mario just above the bottom platform
             auto mario = MarioEntity::create(tex);
             std::cout << "Mario created with ID: " << mario.entity().id << std::endl;
 
@@ -135,5 +139,15 @@ namespace donkeykong {
             std::cerr << "Unknown exception during entity creation!" << std::endl;
             SDL_Delay(5000); // Keep window open for 5 seconds to see error
         }
+    }
+
+    void Game::createPlatforms() {
+        PlatformEntity::createPlatform(boxWorld, 400, 705, 800, 20, BOX_SCALE); //platform mario land on
+        PlatformEntity::createPlatform(boxWorld, 400, 655, 750, 15, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 555, 750, 15, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 455, 750, 15, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 355, 750, 15, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 255, 750, 15, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 155, 750, 15, BOX_SCALE);
     }
 }
