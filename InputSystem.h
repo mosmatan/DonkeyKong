@@ -10,7 +10,6 @@ using namespace bagel;
 
 namespace donkeykong {
 
-
 struct PlayerControl {
     bool canJump = false;
     bool isOnLadder = false;
@@ -36,6 +35,11 @@ public:
 
                 b2Vec2 velocity = b2Body_GetLinearVelocity(body.body);
 
+                //check if player is on ground
+                if (std::abs(velocity.y) < 0.1f) {
+                    control.canJump = true;
+                }
+
                 if (control.isOnLadder) {
                     //ladder climbing behavior
                     if (keyboardState[SDL_SCANCODE_UP] || keyboardState[SDL_SCANCODE_W]) {
@@ -48,7 +52,7 @@ public:
                         velocity.y = 0; //if up/down not pressed, stop moving on ladder
                     }
 
-                    // Allow limited horizontal movement on ladders
+                    //limit left/right movements on ladders
                     if (keyboardState[SDL_SCANCODE_LEFT] || keyboardState[SDL_SCANCODE_A]) {
                         velocity.x = -control.moveSpeed * 0.5f; //slower speed on ladder
                         drawable.flip = false;
