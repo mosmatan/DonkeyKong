@@ -13,23 +13,20 @@ using namespace bagel;
 namespace donkeykong {
 
 struct PlatformInfo {
-    int x, y;      // Center position of platform
-    int width;     // Width of the platform
-    int height;    // Height/thickness of the platform
+    int x, y;
+    int width;
+    int height;
 
     PlatformInfo(int x, int y, int width, int height)
         : x(x), y(y), width(width), height(height) {}
 
-    // Check if an entity is on this platform
     bool isEntityOnPlatform(int entityX, int entityY, int entityHeight) const {
         int halfWidth = width / 2;
         int halfHeight = height / 2;
         int entityBottom = entityY + entityHeight / 2;
 
-        // Check if entity is horizontally within platform bounds
         bool horizontalOverlap = (entityX >= x - halfWidth) && (entityX <= x + halfWidth);
 
-        // Check if entity's bottom is at or slightly above the platform's top
         bool verticalPosition = std::abs(entityBottom - (y - halfHeight)) < 5;
 
         return horizontalOverlap && verticalPosition;
@@ -64,24 +61,19 @@ public:
                 b2Vec2 velocity = b2Body_GetLinearVelocity(body.body);
                 bool onPlatform = false;
 
-                // Entity height (adjust based on your entity dimensions)
                 const int entityHeight = 30; // Approximate Mario height
 
                 for (const auto& platform : platforms) {
                     if (platform.isEntityOnPlatform(pos.x, pos.y, entityHeight)) {
                         onPlatform = true;
-
-                        // Adjust entity to be exactly on the platform
+                        //move entity to be on platform
                         pos.y = platform.y - platform.height/2 - entityHeight/2;
-
-                        // Stop vertical movement
                         velocity.y = 0;
                         b2Body_SetLinearVelocity(body.body, velocity);
                         break;
                     }
                 }
 
-                // Update jumping ability based on platform contact
                 if (onPlatform && !control.canJump) {
                     control.canJump = true;
                 } else if (!onPlatform && control.canJump && velocity.y > 0.1f) {

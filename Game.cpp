@@ -99,7 +99,6 @@ namespace donkeykong {
     }
 
     void Game::createPlatforms() {
-        // Create Box2D physics bodies for platforms
         PlatformEntity::createPlatform(boxWorld, 400, 700, 700, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 600, 700, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 500, 700, 10, BOX_SCALE);
@@ -108,7 +107,6 @@ namespace donkeykong {
         PlatformEntity::createPlatform(boxWorld, 400, 200, 700, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 100, 700, 10, BOX_SCALE);
 
-        // Add logical platforms to platform system (center x, center y, width, height)
         platformSystem.addPlatform(400, 700, 700, 10);
         platformSystem.addPlatform(400, 600, 700, 10);
         platformSystem.addPlatform(400, 500, 700, 10);
