@@ -256,6 +256,7 @@ CMakeFiles/BAGEL.dir/Game.cpp.obj: C:/Users/Admin/CLionProjects/DonkeyKong/Game.
   C:/Users/Admin/CLionProjects/DonkeyKong/Components.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/Game.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/InputSystem.h \
+  C:/Users/Admin/CLionProjects/DonkeyKong/LadderSystem.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/MarioEntity.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/PhysicsSystem.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/PlatformEntity.h \
@@ -520,6 +521,7 @@ CMakeFiles/BAGEL.dir/MarioEntity.cpp.obj: C:/Users/Admin/CLionProjects/DonkeyKon
   C:/Users/Admin/CLionProjects/DonkeyKong/Components.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/Game.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/InputSystem.h \
+  C:/Users/Admin/CLionProjects/DonkeyKong/LadderSystem.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/MarioEntity.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/PhysicsSystem.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/PlatformSystem.h \
@@ -1204,6 +1206,7 @@ CMakeFiles/BAGEL.dir/main.cpp.obj: C:/Users/Admin/CLionProjects/DonkeyKong/main.
   C:/Users/Admin/CLionProjects/DonkeyKong/Components.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/Game.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/InputSystem.h \
+  C:/Users/Admin/CLionProjects/DonkeyKong/LadderSystem.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/PhysicsSystem.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/PlatformSystem.h \
   C:/Users/Admin/CLionProjects/DonkeyKong/Pong.h \
@@ -1904,6 +1907,8 @@ C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/include/box2d/collision.h:
 C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/include/box2d/id.h:
 
 C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/include/box2d/types.h:
+
+C:/Users/Admin/CLionProjects/DonkeyKong/LadderSystem.h:
 
 C:/Users/Admin/CLionProjects/DonkeyKong/MarioEntity.h:
 

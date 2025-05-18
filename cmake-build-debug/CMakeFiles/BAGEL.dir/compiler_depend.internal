@@ -257,6 +257,7 @@ CMakeFiles/BAGEL.dir/Game.cpp.obj
  C:/Users/Admin/CLionProjects/DonkeyKong/Components.h
  C:/Users/Admin/CLionProjects/DonkeyKong/Game.h
  C:/Users/Admin/CLionProjects/DonkeyKong/InputSystem.h
+ C:/Users/Admin/CLionProjects/DonkeyKong/LadderSystem.h
  C:/Users/Admin/CLionProjects/DonkeyKong/MarioEntity.h
  C:/Users/Admin/CLionProjects/DonkeyKong/PhysicsSystem.h
  C:/Users/Admin/CLionProjects/DonkeyKong/PlatformEntity.h
@@ -522,6 +523,7 @@ CMakeFiles/BAGEL.dir/MarioEntity.cpp.obj
  C:/Users/Admin/CLionProjects/DonkeyKong/Components.h
  C:/Users/Admin/CLionProjects/DonkeyKong/Game.h
  C:/Users/Admin/CLionProjects/DonkeyKong/InputSystem.h
+ C:/Users/Admin/CLionProjects/DonkeyKong/LadderSystem.h
  C:/Users/Admin/CLionProjects/DonkeyKong/MarioEntity.h
  C:/Users/Admin/CLionProjects/DonkeyKong/PhysicsSystem.h
  C:/Users/Admin/CLionProjects/DonkeyKong/PlatformSystem.h
@@ -1209,6 +1211,7 @@ CMakeFiles/BAGEL.dir/main.cpp.obj
  C:/Users/Admin/CLionProjects/DonkeyKong/Components.h
  C:/Users/Admin/CLionProjects/DonkeyKong/Game.h
  C:/Users/Admin/CLionProjects/DonkeyKong/InputSystem.h
+ C:/Users/Admin/CLionProjects/DonkeyKong/LadderSystem.h
  C:/Users/Admin/CLionProjects/DonkeyKong/PhysicsSystem.h
  C:/Users/Admin/CLionProjects/DonkeyKong/PlatformSystem.h
  C:/Users/Admin/CLionProjects/DonkeyKong/Pong.h

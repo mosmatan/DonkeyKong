@@ -9,6 +9,7 @@
 #include "PhysicsSystem.h"
 #include "InputSystem.h"
 #include "PlatformSystem.h"
+#include "LadderSystem.h"
 
 namespace donkeykong {
 
@@ -42,11 +43,14 @@ namespace donkeykong {
         PhysicsSystem physicsSystem;
         InputSystem inputSystem;
         AngledPlatformSystem platformSystem;
+        LadderSystem ladderSystem;
+
 
         void gameLoop();
         void createEntities();
         void createPlatforms();
         void createLadders();
+
 
     };
 

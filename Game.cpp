@@ -70,6 +70,7 @@ namespace donkeykong {
 
             const Uint8* keyboardState = reinterpret_cast<const Uint8*>(SDL_GetKeyboardState(NULL));
             platformSystem.update();
+            ladderSystem.update();
             inputSystem.update(keyboardState);
             physicsSystem.update(PHYSICS_TIME_STEP);
             renderSystem.update();
@@ -93,15 +94,13 @@ namespace donkeykong {
     void Game::createEntities() {
         Background::createBackground(ren, tex);
         createPlatforms();
+        createLadders();
         MarioEntity::create(tex);
     }
 
     void Game::createPlatforms() {
-        std::cout << "Creating platforms..." << std::endl;
-
         PlatformEntity::createPlatform(boxWorld, 400, 700, 700, 10, BOX_SCALE);
-
-        platformSystem.addPlatform(50, 700, 750, 700);
+        platformSystem.addPlatform(50, 694, 750, 700);
 
         PlatformEntity::createPlatform(boxWorld, 400, 600, 700, 10, BOX_SCALE);
         platformSystem.addPlatform(50, 600, 750, 600);
@@ -121,10 +120,14 @@ namespace donkeykong {
         PlatformEntity::createPlatform(boxWorld, 400, 100, 700, 10, BOX_SCALE);
         platformSystem.addPlatform(50, 100, 750, 100);
 
-        std::cout << "Platforms created successfully" << std::endl;
     }
 
     void Game::createLadders() {
-        //need to continue, for example: ladderSystem.addLadder(100, 650, 20, 100);
+        ladderSystem.addLadder(635, 650, 20, 100);
+        ladderSystem.addLadder(650, 550, 20, 100);
+        ladderSystem.addLadder(250, 450, 20, 100);
+        ladderSystem.addLadder(600, 350, 20, 100);
+        ladderSystem.addLadder(200, 250, 20, 100);
+        ladderSystem.addLadder(550, 150, 20, 100);
     }
 }

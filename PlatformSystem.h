@@ -25,7 +25,6 @@ struct PlatformInfo {
             slope = 0;
         }
     }
-
     //check if an x position is within this platform's range
     bool containsX(int x) const {
         return (x >= startX && x <= endX) || (x >= endX && x <= startX);
@@ -89,13 +88,12 @@ public:
                 } else if (!onPlatform && control.canJump && velocity.y > 0.1f) {
                     control.canJump = false;
                 }
-
                 //if mario is on a platform and moving right/left, adjust height because of angle
                 if (onPlatform && currentPlatform && std::abs(velocity.x) > 0.01f) {
                     int newX = pos.x + static_cast<int>(velocity.x);
                     //check if still on the same platform
                     if (currentPlatform->containsX(newX)) {
-                        int newY = currentPlatform->getYAt(newX) - 15; // 15 is Mario's height offset
+                        int newY = currentPlatform->getYAt(newX) - 15; //15=distance from center to feet
 
                         pos.y = newY;
                     }

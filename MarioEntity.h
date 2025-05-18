@@ -23,10 +23,12 @@ namespace donkeykong {
 
             Entity mario = Entity::create();
 
-            Position position{100,683};
+            Position position{100,660};
+
+
 
             b2BodyDef marioBodyDef = b2DefaultBodyDef();
-            marioBodyDef.type = b2_dynamicBody; // Change to dynamic body to be affected by gravity
+            marioBodyDef.type = b2_dynamicBody;
             marioBodyDef.position = {position.x / Game::BOX_SCALE, position.y / Game::BOX_SCALE};
             b2BodyId marioBody = b2CreateBody(Game::boxWorld, &marioBodyDef);
 
@@ -40,7 +42,7 @@ namespace donkeykong {
             mario.add<Drawable>(
                 {
                     tex,
-                    SDL_FRect{16, 200, 14, 21}, //14 21
+                    SDL_FRect{16, 200, 14, 21},
                     TEX_SCALE_WIDTH_MARIO,
                     TEX_SCALE_HEIGHT_MARIO,
                     true,

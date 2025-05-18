@@ -13,7 +13,6 @@ namespace donkeykong {
     class GroundedSystem {
     public:
         GroundedSystem() = default;
-
         //update if can jump
         void update() {
             for (ent_type e{0}; e.id <= World::maxId().id; ++e.id) {
@@ -25,7 +24,6 @@ namespace donkeykong {
                     if (!b2Body_IsValid(body.body)) {
                         continue;
                     }
-
                     b2Vec2 velocity = b2Body_GetLinearVelocity(body.body);
                     //if falling, cant jump
                     if (velocity.y > 0.1f && !control.isOnLadder) {

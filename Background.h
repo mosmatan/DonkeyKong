@@ -15,7 +15,7 @@ namespace donkeykong {
             auto entity =  Entity::create();
 
             entity.addAll(
-                Drawable{tex, {10, 365,230,270}, 3.f,3.f, true},
+                Drawable{tex, {370, 50,230,270}, 3.f,3.f, true},
                 Position{175,150}
             );
 

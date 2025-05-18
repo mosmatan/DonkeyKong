@@ -81,7 +81,6 @@ public:
                     else {
                         velocity.x *= 0.8f;
                     }
-
                     //jump
                     if ((keyboardState[SDL_SCANCODE_UP] || keyboardState[SDL_SCANCODE_W] ||
                          keyboardState[SDL_SCANCODE_SPACE]) && control.canJump) {
