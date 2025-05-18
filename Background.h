@@ -1,7 +1,3 @@
-//
-// Created by Matan Moskovich on 11/05/2025.
-//
-
 #ifndef BACKGROUND_H
 #define BACKGROUND_H
 #include "bagel.h"

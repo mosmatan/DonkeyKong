@@ -1,7 +1,3 @@
-//
-// Created by Matan Moskovich on 14/05/2025.
-//
-
 #include "Game.h"
 
 #include <iostream>
@@ -10,7 +6,7 @@
 #include "Background.h"
 #include "bagel.h"
 #include "MarioEntity.h"
-
+#include "PlatformEntity.h"
 
 using namespace bagel;
 
@@ -38,9 +34,8 @@ namespace donkeykong {
         }
         SDL_DestroySurface(surf);
 
-        // Box2D world
         b2WorldDef worldDef = b2DefaultWorldDef();
-        worldDef.gravity = {0, 2.0f}; // Reduced gravity for testing
+        worldDef.gravity = {0, 10.0f}; // Set gravity
         boxWorld = b2CreateWorld(&worldDef);
 
         renderSystem.setRenderer(ren);
@@ -59,95 +54,77 @@ namespace donkeykong {
             SDL_DestroyWindow(win);
 
         SDL_Quit();
-
     }
 
     void Game::run() {
-
         createEntities();
         gameLoop();
     }
 
     void Game::gameLoop() {
-        SDL_SetRenderDrawColor(ren, 0,0,0,255);
+        SDL_SetRenderDrawColor(ren, 0, 0, 0, 255);
         auto start = SDL_GetTicks();
         bool quit = false;
 
-        std::cout << "Entering game loop..." << std::endl;
+        while (!quit) {
 
-        try {
-            while (!quit) {
-                // Update physics - with reduced gravity for testing
-                physicsSystem.update(PHYSICS_TIME_STEP);
+            const Uint8* keyboardState = reinterpret_cast<const Uint8*>(SDL_GetKeyboardState(NULL));
+            platformSystem.update();
+            inputSystem.update(keyboardState);
+            physicsSystem.update(PHYSICS_TIME_STEP);
+            renderSystem.update();
 
-                // Render frame
-                renderSystem.update();
-
-                auto end = SDL_GetTicks();
-                if (end-start < GAME_FRAME) {
-                    SDL_Delay(GAME_FRAME - (end-start));
-                }
-                start += GAME_FRAME;
-
-                SDL_Event e;
-                while (SDL_PollEvent(&e)) {
-                    if (e.type == SDL_EVENT_QUIT)
-                        quit = true;
-                    else if ((e.type == SDL_EVENT_KEY_DOWN) && (e.key.scancode == SDL_SCANCODE_ESCAPE))
-                        quit = true;
-                }
+            auto end = SDL_GetTicks();
+            if (end-start < GAME_FRAME) {
+                SDL_Delay(GAME_FRAME - (end-start));
             }
-        } catch (const std::exception& e) {
-            std::cerr << "Exception in game loop: " << e.what() << std::endl;
-            SDL_Delay(5000); // Keep window open for 5 seconds to see error
-        } catch (...) {
-            std::cerr << "Unknown exception in game loop!" << std::endl;
-            SDL_Delay(5000); // Keep window open for 5 seconds to see error
-        }
+            start += GAME_FRAME;
 
-        std::cout << "Exiting game loop..." << std::endl;
+            SDL_Event e;
+            while (SDL_PollEvent(&e)) {
+                if (e.type == SDL_EVENT_QUIT)
+                    quit = true;
+                else if ((e.type == SDL_EVENT_KEY_DOWN) && (e.key.scancode == SDL_SCANCODE_ESCAPE))
+                    quit = true;
+            }
+        }
     }
 
     void Game::createEntities() {
-        try {
-            std::cout << "Creating background..." << std::endl;
-            auto bg = Background::createBackground(ren, tex);
-            std::cout << "Background created with ID: " << bg.entity().id << std::endl;
-
-            // Create platforms based on the background image
-            createPlatforms();
-
-            std::cout << "Creating Mario..." << std::endl;
-            // Position Mario just above the bottom platform
-            auto mario = MarioEntity::create(tex);
-            std::cout << "Mario created with ID: " << mario.entity().id << std::endl;
-
-            // Validate that Mario has all required components
-            if (!mario.has<Body>() || !mario.has<Position>()) {
-                std::cerr << "Error: Mario is missing required components!" << std::endl;
-            }
-
-            // Validate that Mario's body is valid
-            auto& body = mario.get<Body>();
-            if (!b2Body_IsValid(body.body)) {
-                std::cerr << "Error: Mario's physics body is invalid!" << std::endl;
-            }
-        } catch (const std::exception& e) {
-            std::cerr << "Exception during entity creation: " << e.what() << std::endl;
-            SDL_Delay(5000); // Keep window open for 5 seconds to see error
-        } catch (...) {
-            std::cerr << "Unknown exception during entity creation!" << std::endl;
-            SDL_Delay(5000); // Keep window open for 5 seconds to see error
-        }
+        Background::createBackground(ren, tex);
+        createPlatforms();
+        MarioEntity::create(tex);
     }
 
     void Game::createPlatforms() {
-        PlatformEntity::createPlatform(boxWorld, 400, 705, 800, 20, BOX_SCALE); //platform mario land on
-        PlatformEntity::createPlatform(boxWorld, 400, 655, 750, 15, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 555, 750, 15, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 455, 750, 15, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 355, 750, 15, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 255, 750, 15, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 155, 750, 15, BOX_SCALE);
+        std::cout << "Creating platforms..." << std::endl;
+
+        PlatformEntity::createPlatform(boxWorld, 400, 700, 700, 10, BOX_SCALE);
+
+        platformSystem.addPlatform(50, 700, 750, 700);
+
+        PlatformEntity::createPlatform(boxWorld, 400, 600, 700, 10, BOX_SCALE);
+        platformSystem.addPlatform(50, 600, 750, 600);
+
+        PlatformEntity::createPlatform(boxWorld, 400, 500, 700, 10, BOX_SCALE);
+        platformSystem.addPlatform(50, 500, 750, 500);
+
+        PlatformEntity::createPlatform(boxWorld, 400, 400, 700, 10, BOX_SCALE);
+        platformSystem.addPlatform(50, 400, 750, 400);
+
+        PlatformEntity::createPlatform(boxWorld, 400, 300, 700, 10, BOX_SCALE);
+        platformSystem.addPlatform(50, 300, 750, 300);
+
+        PlatformEntity::createPlatform(boxWorld, 400, 200, 700, 10, BOX_SCALE);
+        platformSystem.addPlatform(50, 200, 750, 200);
+
+        PlatformEntity::createPlatform(boxWorld, 400, 100, 700, 10, BOX_SCALE);
+        platformSystem.addPlatform(50, 100, 750, 100);
+
+        std::cout << "Platforms created successfully" << std::endl;
+    }
+
+    void Game::createLadders() {
+        //need to continue, for example: ladderSystem.addLadder(100, 650, 20, 100);
     }
 }

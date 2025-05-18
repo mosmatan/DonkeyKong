@@ -1,7 +1,3 @@
-//
-// Created by Matan Moskovich on 11/05/2025.
-//
-
 #ifndef RENDERSYSTEM_H
 #define RENDERSYSTEM_H
 #include "bagel.h"

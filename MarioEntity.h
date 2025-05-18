@@ -1,12 +1,9 @@
-//
-// Created by Matan Moskovich on 14/05/2025.
-//
-
 #ifndef MARIOENTITY_H
 #define MARIOENTITY_H
 #include "bagel.h"
 #include "Components.h"
 #include "Game.h"
+#include "InputSystem.h"
 
 using namespace bagel;
 
@@ -50,6 +47,8 @@ namespace donkeykong {
                 });
             mario.add<Moveable>({0,0});
             mario.add<Body>({marioBody});
+
+            mario.add<PlayerControl>({false, false, 5.0f, 5.0f, 2.0f});
 
             return mario;
         }

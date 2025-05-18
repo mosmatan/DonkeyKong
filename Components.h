@@ -1,7 +1,3 @@
-//
-// Created by Matan Moskovich on 11/05/2025.
-//
-
 #ifndef COMPONENTS_H
 #define COMPONENTS_H
 
