@@ -23,7 +23,9 @@ namespace donkeykong {
 
             Entity mario = Entity::create();
 
-            Position position{150,650};
+            Position position{120,650};
+
+
 
             b2BodyDef marioBodyDef = b2DefaultBodyDef();
             marioBodyDef.type = b2_dynamicBody;
@@ -48,7 +50,8 @@ namespace donkeykong {
             mario.add<Moveable>({0,0});
             mario.add<Body>({marioBody});
 
-            mario.add<PlayerControl>({false, false, 5.0f, 5.0f, 2.0f});
+            mario.add<PlayerControl>({false, false, 5.0f, 7.0f, 3.5f});
+
             return mario;
         }
 

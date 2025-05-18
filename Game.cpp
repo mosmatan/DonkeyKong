@@ -35,7 +35,7 @@ namespace donkeykong {
         SDL_DestroySurface(surf);
 
         b2WorldDef worldDef = b2DefaultWorldDef();
-        worldDef.gravity = {0, 10.0f}; // Set gravity
+        worldDef.gravity = {0, 10.0f};
         boxWorld = b2CreateWorld(&worldDef);
 
         renderSystem.setRenderer(ren);
@@ -67,8 +67,9 @@ namespace donkeykong {
         bool quit = false;
 
         while (!quit) {
-            const Uint8* keyboardState = reinterpret_cast<const Uint8*>(SDL_GetKeyboardState(NULL));
 
+            const Uint8* keyboardState = reinterpret_cast<const Uint8*>(SDL_GetKeyboardState(NULL));
+            platformSystem.update();
             ladderSystem.update();
             inputSystem.update(keyboardState);
             physicsSystem.update(PHYSICS_TIME_STEP);
@@ -98,18 +99,25 @@ namespace donkeykong {
     }
 
     void Game::createPlatforms() {
-        PlatformEntity::createPlatform(boxWorld, 400, 687, 700, 10, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 568, 700, 10, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 700, 700, 10, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 578, 700, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 500, 700, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 400, 700, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 300, 700, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 200, 700, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 100, 700, 10, BOX_SCALE);
 
+        platformSystem.addPlatform(400, 700, 700, 10);
+        platformSystem.addPlatform(400, 578, 700, 10);
+        platformSystem.addPlatform(400, 500, 700, 10);
+        platformSystem.addPlatform(400, 400, 700, 10);
+        platformSystem.addPlatform(400, 300, 700, 10);
+        platformSystem.addPlatform(400, 200, 700, 10);
+        platformSystem.addPlatform(400, 100, 700, 10);
     }
 
     void Game::createLadders() {
-        ladderSystem.addLadder(635, 650, 20, 100);
+        ladderSystem.addLadder(80, 660, 20, 150);
         ladderSystem.addLadder(650, 550, 20, 100);
         ladderSystem.addLadder(250, 450, 20, 100);
         ladderSystem.addLadder(600, 350, 20, 100);

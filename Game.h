@@ -8,7 +8,7 @@
 #include "RenderSystem.h"
 #include "PhysicsSystem.h"
 #include "InputSystem.h"
-
+#include "PlatformSystem.h"
 #include "LadderSystem.h"
 
 namespace donkeykong {
@@ -42,6 +42,7 @@ namespace donkeykong {
         RenderSystem renderSystem;
         PhysicsSystem physicsSystem;
         InputSystem inputSystem;
+        PlatformSystem platformSystem;
         LadderSystem ladderSystem;
 
 
