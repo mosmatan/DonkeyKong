@@ -54,6 +54,6 @@ namespace donkeykong {
 
     };
 
-} // donkeykong
+}
 
 #endif //GAME_H

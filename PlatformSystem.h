@@ -93,6 +93,6 @@ private:
         .build();
 };
 
-} // donkeykong
+}
 
 #endif //PLATFORM_SYSTEM_H

@@ -35,7 +35,7 @@ namespace donkeykong {
         SDL_DestroySurface(surf);
 
         b2WorldDef worldDef = b2DefaultWorldDef();
-        worldDef.gravity = {0, 10.0f}; // Set gravity
+        worldDef.gravity = {0, 10.0f};
         boxWorld = b2CreateWorld(&worldDef);
 
         renderSystem.setRenderer(ren);
