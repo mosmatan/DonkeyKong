@@ -1,5 +1,5 @@
-﻿#ifndef ANGLED_PLATFORM_SYSTEM_H
-#define ANGLED_PLATFORM_SYSTEM_H
+﻿#ifndef PLATFORM_SYSTEM_H
+#define PLATFORM_SYSTEM_H
 
 #include "bagel.h"
 #include "Components.h"
@@ -13,37 +13,37 @@ using namespace bagel;
 namespace donkeykong {
 
 struct PlatformInfo {
-    int startX, startY;
-    int endX, endY;
-    float slope;
+    int x, y;      // Center position of platform
+    int width;     // Width of the platform
+    int height;    // Height/thickness of the platform
 
-    PlatformInfo(int x1, int y1, int x2, int y2)
-        : startX(x1), startY(y1), endX(x2), endY(y2) {
-        if (x2 != x1) {
-            slope = static_cast<float>(y2 - y1) / (x2 - x1);
-        } else {
-            slope = 0;
-        }
-    }
-    //check if an x position is within this platform's range
-    bool containsX(int x) const {
-        return (x >= startX && x <= endX) || (x >= endX && x <= startX);
-    }
+    PlatformInfo(int x, int y, int width, int height)
+        : x(x), y(y), width(width), height(height) {}
 
-    int getYAt(int x) const {
-        if (startX == endX) return startY; // Avoid division by zero
-        return startY + static_cast<int>(slope * (x - startX));
+    // Check if an entity is on this platform
+    bool isEntityOnPlatform(int entityX, int entityY, int entityHeight) const {
+        int halfWidth = width / 2;
+        int halfHeight = height / 2;
+        int entityBottom = entityY + entityHeight / 2;
+
+        // Check if entity is horizontally within platform bounds
+        bool horizontalOverlap = (entityX >= x - halfWidth) && (entityX <= x + halfWidth);
+
+        // Check if entity's bottom is at or slightly above the platform's top
+        bool verticalPosition = std::abs(entityBottom - (y - halfHeight)) < 5;
+
+        return horizontalOverlap && verticalPosition;
     }
 };
 
-class AngledPlatformSystem {
+class PlatformSystem {
 public:
-    AngledPlatformSystem() = default;
+    PlatformSystem() = default;
 
-    void addPlatform(int x1, int y1, int x2, int y2) {
-        platforms.emplace_back(x1, y1, x2, y2);
-        std::cout << "Added platform from (" << x1 << "," << y1 << ") to ("
-                  << x2 << "," << y2 << ") with slope " << platforms.back().slope << std::endl;
+    void addPlatform(int x, int y, int width, int height) {
+        platforms.emplace_back(x, y, width, height);
+        std::cout << "Added platform at (" << x << "," << y << ") with dimensions "
+                  << width << "x" << height << std::endl;
     }
 
     void clearPlatforms() {
@@ -60,43 +60,32 @@ public:
                 if (!b2Body_IsValid(body.body)) {
                     continue;
                 }
+
                 b2Vec2 velocity = b2Body_GetLinearVelocity(body.body);
-                //check if mario is on a platform
                 bool onPlatform = false;
-                const PlatformInfo* currentPlatform = nullptr;
+
+                // Entity height (adjust based on your entity dimensions)
+                const int entityHeight = 30; // Approximate Mario height
 
                 for (const auto& platform : platforms) {
-                    if (platform.containsX(pos.x)) {
-                        int platformY = platform.getYAt(pos.x);
-                        int marioFeet = pos.y + 15;
-                        //check if mario is close to the platform height
-                        if (std::abs(marioFeet - platformY) < 5 && velocity.y >= 0) {
-                            onPlatform = true;
-                            currentPlatform = &platform;
-                            //adjust mario position to be on the platform
-                            pos.y = platformY - 15;
-                            velocity.y = 0;
-                            b2Body_SetLinearVelocity(body.body, velocity);
+                    if (platform.isEntityOnPlatform(pos.x, pos.y, entityHeight)) {
+                        onPlatform = true;
 
-                            break;
-                        }
+                        // Adjust entity to be exactly on the platform
+                        pos.y = platform.y - platform.height/2 - entityHeight/2;
+
+                        // Stop vertical movement
+                        velocity.y = 0;
+                        b2Body_SetLinearVelocity(body.body, velocity);
+                        break;
                     }
                 }
-                //update if mario can jump
+
+                // Update jumping ability based on platform contact
                 if (onPlatform && !control.canJump) {
                     control.canJump = true;
                 } else if (!onPlatform && control.canJump && velocity.y > 0.1f) {
                     control.canJump = false;
-                }
-                //if mario is on a platform and moving right/left, adjust height because of angle
-                if (onPlatform && currentPlatform && std::abs(velocity.x) > 0.01f) {
-                    int newX = pos.x + static_cast<int>(velocity.x);
-                    //check if still on the same platform
-                    if (currentPlatform->containsX(newX)) {
-                        int newY = currentPlatform->getYAt(newX) - 15; //15=distance from center to feet
-
-                        pos.y = newY;
-                    }
                 }
             }
         }
@@ -114,4 +103,4 @@ private:
 
 } // donkeykong
 
-#endif //ANGLED_PLATFORM_SYSTEM_H
+#endif //PLATFORM_SYSTEM_H

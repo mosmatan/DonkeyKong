@@ -42,7 +42,7 @@ namespace donkeykong {
         RenderSystem renderSystem;
         PhysicsSystem physicsSystem;
         InputSystem inputSystem;
-        AngledPlatformSystem platformSystem;
+        PlatformSystem platformSystem;
         LadderSystem ladderSystem;
 
 

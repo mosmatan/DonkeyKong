@@ -23,7 +23,7 @@ namespace donkeykong {
 
             Entity mario = Entity::create();
 
-            Position position{100,660};
+            Position position{120,660};
 
 
 

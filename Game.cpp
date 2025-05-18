@@ -99,31 +99,27 @@ namespace donkeykong {
     }
 
     void Game::createPlatforms() {
+        // Create Box2D physics bodies for platforms
         PlatformEntity::createPlatform(boxWorld, 400, 700, 700, 10, BOX_SCALE);
-        platformSystem.addPlatform(50, 694, 750, 700);
-
         PlatformEntity::createPlatform(boxWorld, 400, 600, 700, 10, BOX_SCALE);
-        platformSystem.addPlatform(50, 600, 750, 600);
-
         PlatformEntity::createPlatform(boxWorld, 400, 500, 700, 10, BOX_SCALE);
-        platformSystem.addPlatform(50, 500, 750, 500);
-
         PlatformEntity::createPlatform(boxWorld, 400, 400, 700, 10, BOX_SCALE);
-        platformSystem.addPlatform(50, 400, 750, 400);
-
         PlatformEntity::createPlatform(boxWorld, 400, 300, 700, 10, BOX_SCALE);
-        platformSystem.addPlatform(50, 300, 750, 300);
-
         PlatformEntity::createPlatform(boxWorld, 400, 200, 700, 10, BOX_SCALE);
-        platformSystem.addPlatform(50, 200, 750, 200);
-
         PlatformEntity::createPlatform(boxWorld, 400, 100, 700, 10, BOX_SCALE);
-        platformSystem.addPlatform(50, 100, 750, 100);
 
+        // Add logical platforms to platform system (center x, center y, width, height)
+        platformSystem.addPlatform(400, 700, 700, 10);
+        platformSystem.addPlatform(400, 600, 700, 10);
+        platformSystem.addPlatform(400, 500, 700, 10);
+        platformSystem.addPlatform(400, 400, 700, 10);
+        platformSystem.addPlatform(400, 300, 700, 10);
+        platformSystem.addPlatform(400, 200, 700, 10);
+        platformSystem.addPlatform(400, 100, 700, 10);
     }
 
     void Game::createLadders() {
-        ladderSystem.addLadder(635, 650, 20, 100);
+        ladderSystem.addLadder(80, 660, 20, 100);
         ladderSystem.addLadder(650, 550, 20, 100);
         ladderSystem.addLadder(250, 450, 20, 100);
         ladderSystem.addLadder(600, 350, 20, 100);
