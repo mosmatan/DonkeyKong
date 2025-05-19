@@ -25,8 +25,6 @@ namespace donkeykong {
 
             Position position{120,650};
 
-
-
             b2BodyDef marioBodyDef = b2DefaultBodyDef();
             marioBodyDef.type = b2_dynamicBody;
             marioBodyDef.position = {position.x / Game::BOX_SCALE, position.y / Game::BOX_SCALE};

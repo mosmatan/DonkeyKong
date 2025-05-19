@@ -23,6 +23,8 @@ add_executable(BAGEL main.cpp
         PhysicsSystem.h
         PlatformEntity.h
         LadderSystem.h
+        BarrelEntity.h
+        BarrelMoveSystem.h
 )
 
 set(SDL_STATIC ON)

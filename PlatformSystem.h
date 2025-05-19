@@ -67,9 +67,9 @@ public:
                     if (platform.isEntityOnPlatform(pos.x, pos.y, entityHeight)) {
                         onPlatform = true;
                         //move entity to be on platform
-                        pos.y = platform.y - platform.height/2 - entityHeight/2;
-                        velocity.y = 0;
-                        b2Body_SetLinearVelocity(body.body, velocity);
+                        // pos.y = platform.y - platform.height/2 - entityHeight/2;
+                        // velocity.y = 0;
+                        // b2Body_SetLinearVelocity(body.body, velocity);
                         break;
                     }
                 }

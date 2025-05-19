@@ -48,8 +48,11 @@ public:
                 auto& pos = World::getComponent<Position>(e);
 
                 bool onLadder = false;
+                int ladder_index = -1;
                 for (const auto& ladder : ladders) {
+                    ladder_index++;
                     if (ladder.isEntityOnLadder(pos.x, pos.y)) {
+                        std::cout << "is on ladder: " << ladder_index << std::endl;
                         onLadder = true;
                         break;
                     }

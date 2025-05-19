@@ -33,6 +33,13 @@ namespace donkeykong {
         b2BodyId body;
     };
 
+    struct BarrelMove {
+        bool isFalling = true; // true if the barrel is falling
+        bool isFalled = false; // true if the barrel just touch the ground after falling
+        float moveSpeed = 3.0f; // speed of the barrel
+        int direction;
+    };
+
 
 }
 

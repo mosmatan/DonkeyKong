@@ -1,212 +1,212 @@
 [
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\aabb.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\aabb.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/aabb.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/aabb.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/aabb.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/aabb.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/aabb.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/aabb.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\arena_allocator.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\arena_allocator.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/arena_allocator.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/arena_allocator.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/arena_allocator.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/arena_allocator.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/arena_allocator.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/arena_allocator.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\array.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\array.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/array.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/array.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/array.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/array.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/array.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/array.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\bitset.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\bitset.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/bitset.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/bitset.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/bitset.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/bitset.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/bitset.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/bitset.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\body.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\body.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/body.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/body.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/body.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/body.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/body.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/body.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\broad_phase.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\broad_phase.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/broad_phase.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/broad_phase.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/broad_phase.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/broad_phase.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/broad_phase.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/broad_phase.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\constraint_graph.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\constraint_graph.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/constraint_graph.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/constraint_graph.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/constraint_graph.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/constraint_graph.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/constraint_graph.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/constraint_graph.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\contact.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\contact.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/contact.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/contact.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/contact.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/contact.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/contact.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/contact.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\contact_solver.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\contact_solver.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/contact_solver.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/contact_solver.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/contact_solver.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/contact_solver.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/contact_solver.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/contact_solver.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\core.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\core.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/core.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/core.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/core.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/core.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/core.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/core.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\distance.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\distance.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/distance.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/distance.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/distance.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/distance.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/distance.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/distance.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\distance_joint.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\distance_joint.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/distance_joint.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/distance_joint.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/distance_joint.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/distance_joint.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/distance_joint.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/distance_joint.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\dynamic_tree.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\dynamic_tree.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/dynamic_tree.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/dynamic_tree.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/dynamic_tree.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/dynamic_tree.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/dynamic_tree.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/dynamic_tree.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\geometry.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\geometry.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/geometry.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/geometry.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/geometry.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/geometry.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/geometry.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/geometry.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\hull.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\hull.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/hull.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/hull.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/hull.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/hull.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/hull.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/hull.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\id_pool.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\id_pool.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/id_pool.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/id_pool.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/id_pool.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/id_pool.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/id_pool.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/id_pool.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\island.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\island.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/island.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/island.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/island.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/island.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/island.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/island.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\joint.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\joint.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/joint.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/joint.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/joint.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/joint.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/joint.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/joint.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\manifold.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\manifold.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/manifold.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/manifold.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/manifold.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/manifold.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/manifold.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/manifold.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\math_functions.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\math_functions.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/math_functions.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/math_functions.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/math_functions.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/math_functions.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/math_functions.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/math_functions.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\motor_joint.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\motor_joint.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/motor_joint.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/motor_joint.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/motor_joint.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/motor_joint.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/motor_joint.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/motor_joint.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\mouse_joint.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\mouse_joint.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/mouse_joint.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/mouse_joint.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/mouse_joint.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/mouse_joint.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/mouse_joint.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/mouse_joint.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\mover.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\mover.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/mover.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/mover.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/mover.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/mover.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/mover.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/mover.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\prismatic_joint.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\prismatic_joint.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/prismatic_joint.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/prismatic_joint.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/prismatic_joint.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/prismatic_joint.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/prismatic_joint.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/prismatic_joint.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\revolute_joint.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\revolute_joint.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/revolute_joint.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/revolute_joint.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/revolute_joint.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/revolute_joint.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/revolute_joint.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/revolute_joint.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\sensor.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\sensor.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/sensor.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/sensor.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/sensor.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/sensor.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/sensor.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/sensor.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\shape.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\shape.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/shape.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/shape.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/shape.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/shape.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/shape.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/shape.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\solver.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\solver.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/solver.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/solver.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/solver.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/solver.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/solver.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/solver.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\solver_set.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\solver_set.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/solver_set.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/solver_set.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/solver_set.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/solver_set.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/solver_set.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/solver_set.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\table.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\table.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/table.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/table.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/table.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/table.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/table.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/table.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\timer.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\timer.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/timer.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/timer.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/timer.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/timer.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/timer.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/timer.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\types.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\types.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/types.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/types.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/types.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/types.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/types.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/types.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\weld_joint.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\weld_joint.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/weld_joint.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/weld_joint.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/weld_joint.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/weld_joint.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/weld_joint.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/weld_joint.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\wheel_joint.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\wheel_joint.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/wheel_joint.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/wheel_joint.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/wheel_joint.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/wheel_joint.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/wheel_joint.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/wheel_joint.c.o"
 },
 {
-  "directory": "C:/Users/Admin/CLionProjects/DonkeyKong/cmake-build-debug/lib/box2d/src",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\gcc.exe -DBOX2D_ENABLE_SIMD @CMakeFiles/box2d.dir/includes_C.rsp -g -std=gnu17 -fvisibility=hidden -fdiagnostics-color=always -ffp-contract=off -Werror -o CMakeFiles\\box2d.dir\\world.c.obj -c C:\\Users\\Admin\\CLionProjects\\DonkeyKong\\lib\\box2d\\src\\world.c",
-  "file": "C:/Users/Admin/CLionProjects/DonkeyKong/lib/box2d/src/world.c",
-  "output": "lib/box2d/src/CMakeFiles/box2d.dir/world.c.obj"
+  "directory": "/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc -DBOX2D_ENABLE_SIMD -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src -g -std=gnu17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIC -fvisibility=hidden -fcolor-diagnostics -ffp-contract=off -Wmissing-prototypes -Werror -o lib/box2d/src/CMakeFiles/box2d.dir/world.c.o -c /Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/world.c",
+  "file": "/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/world.c",
+  "output": "lib/box2d/src/CMakeFiles/box2d.dir/world.c.o"
 }
 ]

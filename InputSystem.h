@@ -20,8 +20,17 @@ struct PlayerControl {
 };
 
 class InputSystem {
+
+
 public:
-    InputSystem() = default;
+    InputSystem() {
+        mask = MaskBuilder()
+        .set<Body>()
+        .set<PlayerControl>()
+        .set<Drawable>()
+        .build();
+
+    }
 
     void update(const Uint8* keyboardState) {
         for (ent_type e{0}; e.id <= World::maxId().id; ++e.id) {
@@ -94,11 +103,7 @@ public:
     }
 
 private:
-    static inline Mask mask = MaskBuilder()
-        .set<Body>()
-        .set<PlayerControl>()
-        .set<Drawable>()
-        .build();
+    Mask mask;
 };
 
 } // donkeykong

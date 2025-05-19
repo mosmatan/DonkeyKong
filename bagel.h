@@ -4,6 +4,7 @@
 #include <cstdint>
 #include <cstring>
 #include <algorithm>
+#include <iostream>
 #include <type_traits>
 
 namespace bagel
@@ -175,7 +176,7 @@ namespace bagel
 
 		bool test(const bit_type b) const { return _mask & b; }
 		bool test(const SingleMask m) const { return (_mask & m._mask) == m._mask; }
-	private:
+	//private:
 		mask_type	_mask{0};
 	};
 	class MultiMask final

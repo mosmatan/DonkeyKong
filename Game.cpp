@@ -5,6 +5,7 @@
 
 #include "Background.h"
 #include "bagel.h"
+#include "BarrelEntity.h"
 #include "MarioEntity.h"
 #include "PlatformEntity.h"
 
@@ -69,9 +70,11 @@ namespace donkeykong {
         while (!quit) {
 
             const Uint8* keyboardState = reinterpret_cast<const Uint8*>(SDL_GetKeyboardState(NULL));
+            physicsSystem.update(PHYSICS_TIME_STEP);
             platformSystem.update();
             ladderSystem.update();
             inputSystem.update(keyboardState);
+            barrelMoveSystem.update();
             physicsSystem.update(PHYSICS_TIME_STEP);
             renderSystem.update();
 
@@ -96,32 +99,33 @@ namespace donkeykong {
         createPlatforms();
         createLadders();
         MarioEntity::create(tex);
+        BarrelEntity::create(tex, 400, 100);
     }
 
     void Game::createPlatforms() {
-        PlatformEntity::createPlatform(boxWorld, 400, 700, 700, 10, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 578, 700, 10, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 500, 700, 10, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 400, 700, 10, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 300, 700, 10, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 200, 700, 10, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 700, 700, 20, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 571, 590, 10, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 453, 550, 10, BOX_SCALE);
+        //PlatformEntity::createPlatform(boxWorld, 400, 400, 700, 10, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 336, 520, 10, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 217, 496, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 100, 700, 10, BOX_SCALE);
 
         platformSystem.addPlatform(400, 700, 700, 10);
-        platformSystem.addPlatform(400, 578, 700, 10);
-        platformSystem.addPlatform(400, 500, 700, 10);
+        platformSystem.addPlatform(400, 571, 590, 10);
+        platformSystem.addPlatform(400, 450, 550, 10);
         platformSystem.addPlatform(400, 400, 700, 10);
-        platformSystem.addPlatform(400, 300, 700, 10);
-        platformSystem.addPlatform(400, 200, 700, 10);
+        platformSystem.addPlatform(400, 336, 520, 10);
+        platformSystem.addPlatform(400, 217, 496, 10);
         platformSystem.addPlatform(400, 100, 700, 10);
     }
 
     void Game::createLadders() {
-        ladderSystem.addLadder(80, 660, 20, 150);
-        ladderSystem.addLadder(650, 550, 20, 100);
-        ladderSystem.addLadder(250, 450, 20, 100);
-        ladderSystem.addLadder(600, 350, 20, 100);
-        ladderSystem.addLadder(200, 250, 20, 100);
-        ladderSystem.addLadder(550, 150, 20, 100);
+        ladderSystem.addLadder(85, 645, 10, 180);
+        ladderSystem.addLadder(115, 500, 10, 125);
+        //ladderSystem.addLadder(250, 450, 20, 100);
+        //ladderSystem.addLadder(600, 350, 20, 100);
+        //ladderSystem.addLadder(200, 250, 20, 100);
+        //ladderSystem.addLadder(550, 150, 20, 100);
     }
 }

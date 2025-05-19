@@ -5,6 +5,7 @@
 #include <SDL3/SDL.h>
 #include <box2d/box2d.h>
 
+#include "BarrelMoveSystem.h"
 #include "RenderSystem.h"
 #include "PhysicsSystem.h"
 #include "InputSystem.h"
@@ -44,6 +45,7 @@ namespace donkeykong {
         InputSystem inputSystem;
         PlatformSystem platformSystem;
         LadderSystem ladderSystem;
+        BarrelMoveSystem barrelMoveSystem;
 
 
         void gameLoop();

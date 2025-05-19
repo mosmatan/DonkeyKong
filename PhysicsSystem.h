@@ -30,11 +30,12 @@ public:
             return;
         }
 
-        const int subStepCount = 8;
+        const int subStepCount = 4;
 
         b2World_Step(boxWorld, timeStep, subStepCount);
         for (ent_type e{0}; e.id <= World::maxId().id; ++e.id) {
             if (World::mask(e).test(mask)) {
+
                 auto& body = World::getComponent<Body>(e);
                 auto& pos = World::getComponent<Position>(e);
 
@@ -53,7 +54,7 @@ private:
     b2WorldId boxWorld;
     float boxScale;
 
-    static inline Mask mask = MaskBuilder()
+     Mask mask = MaskBuilder()
         .set<Position>()
         .set<Body>()
         .build();
