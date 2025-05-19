@@ -108,14 +108,14 @@ namespace donkeykong {
         PlatformEntity::createPlatform(boxWorld, 464, 576, 130, 20, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 614, 576, 110, 20, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 175, 452, 100, 20, BOX_SCALE);
-        //
         PlatformEntity::createPlatform(boxWorld, 395, 452, 195, 20, BOX_SCALE);
-        //
         PlatformEntity::createPlatform(boxWorld, 600, 452, 85, 20, BOX_SCALE);
-        //
-        //PlatformEntity::createPlatform(boxWorld, 400, 336, 520, 20, BOX_SCALE);
-        //PlatformEntity::createPlatform(boxWorld, 400, 217, 496, 20, BOX_SCALE);
-        //PlatformEntity::createPlatform(boxWorld, 400, 100, 700, 20, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 260, 337, 185, 20, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 510, 337, 220, 20, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 217, 215, 40, 20, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 390, 215, 220, 20, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 575, 215, 50, 20, BOX_SCALE);
+
 
 
         platformSystem.addPlatform(400, 700, 700, 10);
@@ -123,10 +123,19 @@ namespace donkeykong {
         platformSystem.addPlatform(464, 576, 130, 10);
         platformSystem.addPlatform(614, 576, 110, 10);
         platformSystem.addPlatform(175, 452, 100, 10);
-        //
         platformSystem.addPlatform(395, 452, 195, 10);
-        //
         platformSystem.addPlatform(600, 452, 85, 10);
+        platformSystem.addPlatform(260, 337, 185, 10);
+        platformSystem.addPlatform(510, 337, 220, 10);
+        platformSystem.addPlatform(217, 215, 40, 10);
+        platformSystem.addPlatform(390, 215, 220, 10);
+        platformSystem.addPlatform(575, 215, 50, 10);
+
+
+
+
+
+
         //
         // platformSystem.addPlatform(400, 400, 700, 10);
         // platformSystem.addPlatform(400, 336, 520, 10);
@@ -136,13 +145,27 @@ namespace donkeykong {
 
     void Game::createLadders() {
         ladderSystem.addLadder(92, 645, 10, 180);
-        ladderSystem.addLadder(115, 500, 10, 125);
         ladderSystem.addLadder(380, 645, 10, 180);
         ladderSystem.addLadder(693, 645, 10, 180);
         ladderSystem.addLadder(115, 500, 10, 125);
         ladderSystem.addLadder(285, 500, 10, 125);
         ladderSystem.addLadder(502, 500, 10, 125);
         ladderSystem.addLadder(668, 500, 10, 125);
+        ladderSystem.addLadder(140, 380, 10, 125);
+        ladderSystem.addLadder(380, 380, 10, 125);
+        ladderSystem.addLadder(643, 380, 10, 125);
+        ladderSystem.addLadder(160, 250, 10, 125);
+        ladderSystem.addLadder(260, 250, 10, 125);
+        ladderSystem.addLadder(526, 250, 10, 125);
+        ladderSystem.addLadder(620, 250, 10, 125);
+
+
+
+
+
+
+
+        //
         //
         // ladderSystem.addLadder(502, 500, 10, 125);
         // ladderSystem.addLadder(502, 500, 10, 125);
