@@ -42,6 +42,7 @@ namespace donkeykong {
         renderSystem.setRenderer(ren);
         physicsSystem.setWorld(boxWorld);
         physicsSystem.setScale(BOX_SCALE);
+        barrelSpawnSystem.setTexture(tex);
     }
 
     DonkeyKongGame::~DonkeyKongGame() {
@@ -70,6 +71,7 @@ namespace donkeykong {
         while (!quit) {
 
             const Uint8* keyboardState = reinterpret_cast<const Uint8*>(SDL_GetKeyboardState(NULL));
+            barrelSpawnSystem.update(PHYSICS_TIME_STEP);
             physicsSystem.update(PHYSICS_TIME_STEP);
             platformSystem.update();
             ladderSystem.update();
@@ -100,9 +102,9 @@ namespace donkeykong {
         createPlatforms();
         createLadders();
         MarioEntity::create(tex);
-        BarrelEntity::create(tex, 400, 120);
-        BarrelEntity::create(tex, 500, 120);
-        BarrelEntity::create(tex, 300, 120);
+        // BarrelEntity::create(tex, 400, 120);
+        // BarrelEntity::create(tex, 500, 120);
+        // BarrelEntity::create(tex, 300, 120);
     }
 
     void DonkeyKongGame::createPlatforms() {

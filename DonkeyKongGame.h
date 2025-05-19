@@ -3,12 +3,14 @@
 #include <SDL3/SDL_render.h>
 
 #include "BarrelMoveSystem.h"
+#include "BarrelSpawnSystem.h"
 #include "RenderSystem.h"
 #include "PhysicsSystem.h"
 #include "InputSystem.h"
 #include "PlatformSystem.h"
 #include "LadderSystem.h"
 #include "RespawnSystem.h"
+
 
 namespace donkeykong {
 
@@ -45,6 +47,7 @@ namespace donkeykong {
         LadderSystem ladderSystem;
         BarrelMoveSystem barrelMoveSystem;
         RespawnSystem respownSystem;
+        BarrelSpawnSystem barrelSpawnSystem{tex, 5, 5.0f};
 
 
         void gameLoop();
