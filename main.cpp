@@ -1,13 +1,8 @@
-#include "Game.h"
-#include "Pong.h"
-using namespace pong;
+#include "DonkeyKongGame.h"
+
 
 int main() {
-	// Pong p;
-	// if (p.valid())
-	// 	p.run();
-
-	donkeykong::Game game;
+	::donkeykong::DonkeyKongGame game;
 	game.run();
 	return 0;
 }

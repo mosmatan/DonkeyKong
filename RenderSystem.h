@@ -11,7 +11,6 @@ namespace donkeykong {
 class RenderSystem {
 
 public:
-    RenderSystem(SDL_Renderer* renderer = nullptr);
     void setRenderer(SDL_Renderer* renderer) {
         this->renderer = renderer;
     }

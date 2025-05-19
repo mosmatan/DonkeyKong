@@ -3,8 +3,10 @@
 
 #include <SDL3/SDL.h>
 
-#include "box2d/math_functions.h"
-#include "lib/box2d/src/body.h"
+//#include "box2d/math_functions.h"
+//#include "lib/box2d/src/body.h"
+
+#include <box2d/box2d.h>
 
 
 namespace donkeykong {
@@ -38,6 +40,15 @@ namespace donkeykong {
         bool isFalled = false; // true if the barrel just touch the ground after falling
         float moveSpeed = 3.0f; // speed of the barrel
         int direction;
+    };
+
+    struct RespawnWhen{
+        bool above = false;
+        bool below = false;
+        int when_y; // when y is above/below the respawn point
+
+        int respawn_y; // y position of the respawn point
+        int respawn_x; // x position of the respawn point
     };
 
 

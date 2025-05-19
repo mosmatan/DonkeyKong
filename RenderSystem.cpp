@@ -3,11 +3,6 @@
 #include "Components.h"
 
 namespace donkeykong {
-    RenderSystem::RenderSystem(SDL_Renderer *renderer) {
-
-        this->renderer = renderer;
-
-    }
 
     void RenderSystem::update() {
         SDL_RenderClear(renderer);

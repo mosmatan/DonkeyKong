@@ -2,7 +2,7 @@
 #define MARIOENTITY_H
 #include "bagel.h"
 #include "Components.h"
-#include "Game.h"
+#include "DonkeyKongGame.h"
 #include "InputSystem.h"
 
 using namespace bagel;
@@ -27,13 +27,13 @@ namespace donkeykong {
 
             b2BodyDef marioBodyDef = b2DefaultBodyDef();
             marioBodyDef.type = b2_dynamicBody;
-            marioBodyDef.position = {position.x / Game::BOX_SCALE, position.y / Game::BOX_SCALE};
-            b2BodyId marioBody = b2CreateBody(Game::boxWorld, &marioBodyDef);
+            marioBodyDef.position = {position.x / DonkeyKongGame::BOX_SCALE, position.y / DonkeyKongGame::BOX_SCALE};
+            b2BodyId marioBody = b2CreateBody(DonkeyKongGame::boxWorld, &marioBodyDef);
 
             b2ShapeDef padShapeDef = b2DefaultShapeDef();
             padShapeDef.density = 1;
 
-            b2Polygon padBox = b2MakeBox(MARIO_BODY_WIDTH/ Game::BOX_SCALE/2, MARIO_BODY_HEIGHT/Game::BOX_SCALE/2);
+            b2Polygon padBox = b2MakeBox(MARIO_BODY_WIDTH/ DonkeyKongGame::BOX_SCALE/2, MARIO_BODY_HEIGHT/DonkeyKongGame::BOX_SCALE/2);
             b2CreatePolygonShape(marioBody, &padShapeDef, &padBox);
 
             mario.add<Position>(position);

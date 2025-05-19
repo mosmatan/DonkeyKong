@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/cmake_install.cmake",
+		"/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/SDL/cmake_install.cmake",
+		"/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/SDL_image/cmake_install.cmake",
+		"/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/cmake_install.cmake",
+		"/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

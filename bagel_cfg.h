@@ -1,7 +1,14 @@
 #pragma once
+#include "Components.h"
 
-constexpr Bagel Params{
-	.DynamicResize = false
-};
+using namespace donkeykong;
 
-//BAGEL_STORAGE(Position,PackedStorage)
+
+	constexpr Bagel Params{
+		.DynamicResize = false
+	};
+
+	BAGEL_STORAGE(RespawnWhen, PackedStorage)
+
+
+
