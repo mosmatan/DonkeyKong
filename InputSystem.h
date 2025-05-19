@@ -54,7 +54,7 @@ public:
                         velocity.y = control.climbSpeed; // Climb down
                     }
                     else {
-                        velocity.y = 0; //if up/down not pressed, stop moving on ladder
+                        velocity.y = -0.185f; //if up/down not pressed, stop moving on ladder
                     }
 
                     // Allow limited horizontal movement on ladders

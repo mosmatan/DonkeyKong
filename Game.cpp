@@ -104,16 +104,16 @@ namespace donkeykong {
 
     void Game::createPlatforms() {
         PlatformEntity::createPlatform(boxWorld, 400, 700, 700, 20, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 571, 590, 10, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 453, 550, 10, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 576, 590, 20, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 400, 452, 550, 20, BOX_SCALE);
         //PlatformEntity::createPlatform(boxWorld, 400, 400, 700, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 336, 520, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 217, 496, 10, BOX_SCALE);
         PlatformEntity::createPlatform(boxWorld, 400, 100, 700, 10, BOX_SCALE);
 
         platformSystem.addPlatform(400, 700, 700, 10);
-        platformSystem.addPlatform(400, 571, 590, 10);
-        platformSystem.addPlatform(400, 450, 550, 10);
+        platformSystem.addPlatform(400, 576, 590, 10);
+        platformSystem.addPlatform(400, 452, 550, 10);
         platformSystem.addPlatform(400, 400, 700, 10);
         platformSystem.addPlatform(400, 336, 520, 10);
         platformSystem.addPlatform(400, 217, 496, 10);

@@ -30,7 +30,7 @@ public:
             return;
         }
 
-        const int subStepCount = 4;
+        const int subStepCount = 16;
 
         b2World_Step(boxWorld, timeStep, subStepCount);
         for (ent_type e{0}; e.id <= World::maxId().id; ++e.id) {
