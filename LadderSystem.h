@@ -52,7 +52,6 @@ public:
                 for (const auto& ladder : ladders) {
                     ladder_index++;
                     if (ladder.isEntityOnLadder(pos.x, pos.y)) {
-                        std::cout << "is on ladder: " << ladder_index << std::endl;
                         onLadder = true;
                         break;
                     }

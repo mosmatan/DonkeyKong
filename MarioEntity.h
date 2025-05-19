@@ -23,7 +23,7 @@ namespace donkeykong {
 
             Entity mario = Entity::create();
 
-            Position position{500,452};
+            Position position{125,575};
 
             b2BodyDef marioBodyDef = b2DefaultBodyDef();
             marioBodyDef.type = b2_dynamicBody;

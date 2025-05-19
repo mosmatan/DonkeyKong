@@ -104,37 +104,34 @@ namespace donkeykong {
 
     void Game::createPlatforms() {
         PlatformEntity::createPlatform(boxWorld, 400, 700, 700, 20, BOX_SCALE);
-        //PlatformEntity::createPlatform(boxWorld, 400, 576, 590, 20, BOX_SCALE);
-        //
         PlatformEntity::createPlatform(boxWorld, 236, 576, 260, 20, BOX_SCALE);
-        //
         PlatformEntity::createPlatform(boxWorld, 464, 576, 130, 20, BOX_SCALE);
-        //
         PlatformEntity::createPlatform(boxWorld, 614, 576, 110, 20, BOX_SCALE);
-        //
-        //PlatformEntity::createPlatform(boxWorld, 400, 452, 550, 20, BOX_SCALE);
-        //PlatformEntity::createPlatform(boxWorld, 400, 400, 700, 10, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 336, 520, 10, BOX_SCALE);
-        //
         PlatformEntity::createPlatform(boxWorld, 175, 452, 100, 20, BOX_SCALE);
         //
-        PlatformEntity::createPlatform(boxWorld, 400, 217, 496, 10, BOX_SCALE);
-        PlatformEntity::createPlatform(boxWorld, 400, 100, 700, 10, BOX_SCALE);
+        PlatformEntity::createPlatform(boxWorld, 395, 452, 195, 20, BOX_SCALE);
+        //
+        PlatformEntity::createPlatform(boxWorld, 600, 452, 85, 20, BOX_SCALE);
+        //
+        //PlatformEntity::createPlatform(boxWorld, 400, 336, 520, 20, BOX_SCALE);
+        //PlatformEntity::createPlatform(boxWorld, 400, 217, 496, 20, BOX_SCALE);
+        //PlatformEntity::createPlatform(boxWorld, 400, 100, 700, 20, BOX_SCALE);
+
 
         platformSystem.addPlatform(400, 700, 700, 10);
-        //platformSystem.addPlatform(400, 576, 590, 10);
         platformSystem.addPlatform(236, 576, 260, 10);
         platformSystem.addPlatform(464, 576, 130, 10);
         platformSystem.addPlatform(614, 576, 110, 10);
-
-
         platformSystem.addPlatform(175, 452, 100, 10);
-
-        //platformSystem.addPlatform(400, 452, 550, 10);
-        platformSystem.addPlatform(400, 400, 700, 10);
-        platformSystem.addPlatform(400, 336, 520, 10);
-        platformSystem.addPlatform(400, 217, 496, 10);
-        platformSystem.addPlatform(400, 100, 700, 10);
+        //
+        platformSystem.addPlatform(395, 452, 195, 10);
+        //
+        platformSystem.addPlatform(600, 452, 85, 10);
+        //
+        // platformSystem.addPlatform(400, 400, 700, 10);
+        // platformSystem.addPlatform(400, 336, 520, 10);
+        // platformSystem.addPlatform(400, 217, 496, 10);
+        // platformSystem.addPlatform(400, 100, 700, 10);
     }
 
     void Game::createLadders() {
@@ -142,16 +139,17 @@ namespace donkeykong {
         ladderSystem.addLadder(115, 500, 10, 125);
         ladderSystem.addLadder(380, 645, 10, 180);
         ladderSystem.addLadder(693, 645, 10, 180);
-        ladderSystem.addLadder(668, 500, 10, 125);
-        ladderSystem.addLadder(502, 500, 10, 125);
+        ladderSystem.addLadder(115, 500, 10, 125);
         ladderSystem.addLadder(285, 500, 10, 125);
+        ladderSystem.addLadder(502, 500, 10, 125);
+        ladderSystem.addLadder(668, 500, 10, 125);
         //
-        ladderSystem.addLadder(502, 500, 10, 125);
-        ladderSystem.addLadder(502, 500, 10, 125);
-        ladderSystem.addLadder(502, 500, 10, 125);
-        ladderSystem.addLadder(502, 500, 10, 125);
-        ladderSystem.addLadder(502, 500, 10, 125);
-        ladderSystem.addLadder(502, 500, 10, 125);
-        ladderSystem.addLadder(502, 500, 10, 125);
+        // ladderSystem.addLadder(502, 500, 10, 125);
+        // ladderSystem.addLadder(502, 500, 10, 125);
+        // ladderSystem.addLadder(502, 500, 10, 125);
+        // ladderSystem.addLadder(502, 500, 10, 125);
+        // ladderSystem.addLadder(502, 500, 10, 125);
+        // ladderSystem.addLadder(502, 500, 10, 125);
+        // ladderSystem.addLadder(502, 500, 10, 125);
     }
 }
