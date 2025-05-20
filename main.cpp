@@ -2,11 +2,7 @@
 
 
 int main() {
-	bool end =false;
-	do{
-		::donkeykong::Game game;
-		end  = game.run();
-	}while (end == true);
-
+	::donkeykong::Game game;
+	game.run();
 	return 0;
 }

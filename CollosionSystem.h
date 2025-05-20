@@ -15,9 +15,6 @@ namespace donkeykong {
 
 class CollosionSystem {
 
-    const int COLLOSION_SIZE = 20;
-
-
     Mask _mask;
     Mask _barralCollosionMask;
 
@@ -33,13 +30,13 @@ bool isColliding(const Position& pos1, const CollosionDetector& dec1,
 
     void lookForCollisions(const ent_type& entity, CollosionDetector& detector, const Position& pos) {
 
-        for (int j = 0; j < PackedStorage<CollosionDetector>::size(); ++j) {
-            const auto& other = PackedStorage<CollosionDetector>::entity(j);
+        for (int j = 0; j < Storage<CollosionDetector>::type::size(); ++j) {
+            const auto& other = Storage<CollosionDetector>::type::entity(j);
             if (entity.id == other.id) {
                 continue; // Skip self-collision
             }
 
-            auto& otherDetector = PackedStorage<CollosionDetector>::get(j);
+            auto& otherDetector = Storage<CollosionDetector>::type::get(j);
             const auto& otherPos = World::getComponent<Position>(other);
             if (!isColliding(pos, detector, otherPos, otherDetector)) {
                 continue; // No collision

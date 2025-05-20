@@ -50,7 +50,7 @@ public:
 
                 b2Vec2 velocity = b2Body_GetLinearVelocity(body.body);
 
-                if (velocity.y > 1.5f) {
+                if (velocity.y > 2.f) {
                     barrelMove.isFalling = true;
                     //std::cout << "barrelMove.isFalling" << std::endl;
                 }
@@ -59,7 +59,7 @@ public:
                     velocity.x = (int)barrelMove.direction * barrelMove.moveSpeed;
                 }
 
-                if (barrelMove.isFalling && velocity.y < 0.5f) {
+                if (barrelMove.isFalling && velocity.y < 1.5f) {
                     //std::cout << "Barrel is stop falling" << std::endl;
                     barrelMove.isFalling = false;
 

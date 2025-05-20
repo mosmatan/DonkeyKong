@@ -16,9 +16,26 @@ namespace donkeykong {
         static constexpr float MARIO_BODY_WIDTH = 14;
         static constexpr float MARIO_BODY_HEIGHT = 21;
 
+        static inline  Drawable** MARIO_ANIMATION = nullptr;
+
     public:
 
         static Entity create(SDL_Texture* tex) {
+
+            MARIO_ANIMATION = new Drawable*[2] {
+                new Drawable[4] { // IDLE
+                    {tex,SDL_FRect{16, 200, 14, 21},TEX_SCALE_WIDTH_MARIO,TEX_SCALE_HEIGHT_MARIO,true,},
+                    {tex,SDL_FRect{16, 200, 14, 21},TEX_SCALE_WIDTH_MARIO,TEX_SCALE_HEIGHT_MARIO,true,},
+                    {tex,SDL_FRect{16, 200, 14, 21},TEX_SCALE_WIDTH_MARIO,TEX_SCALE_HEIGHT_MARIO,true,},
+                    {tex,SDL_FRect{16, 200, 14, 21},TEX_SCALE_WIDTH_MARIO,TEX_SCALE_HEIGHT_MARIO,true,}
+                },
+                new Drawable[4] { // MOVING
+                    {tex,SDL_FRect{16, 200, 14, 21},TEX_SCALE_WIDTH_MARIO,TEX_SCALE_HEIGHT_MARIO,true,},
+                    {tex,SDL_FRect{32, 200, 14, 21},TEX_SCALE_WIDTH_MARIO,TEX_SCALE_HEIGHT_MARIO,true,},
+                    {tex,SDL_FRect{48, 200, 14, 21},TEX_SCALE_WIDTH_MARIO,TEX_SCALE_HEIGHT_MARIO,true,},
+                    {tex,SDL_FRect{32, 200, 14, 21},TEX_SCALE_WIDTH_MARIO,TEX_SCALE_HEIGHT_MARIO,true,}
+                },
+            };
 
             Entity mario = Entity::create();
 
@@ -48,7 +65,8 @@ namespace donkeykong {
             mario.add<Body>({marioBody});
             mario.add<CollosionDetector>({0, MARIO_BODY_WIDTH , MARIO_BODY_HEIGHT / 3});
 
-            mario.add<PlayerControl>({false, false, 8.0f, 7.0f, 3.5f});
+            mario.add<PlayerControl>({false, false, 8.0f, 3.0f, 1.5f});
+            mario.add<Animation>({MARIO_ANIMATION,2,4,1,0, Animation::type::MARIO});
 
             return mario;
         }

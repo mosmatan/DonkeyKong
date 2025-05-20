@@ -28,10 +28,10 @@ public:
 
     void update() {
 
-        for (int i=0; i < PackedStorage<RespawnWhen>::size(); i++) {
-            auto& respawn = PackedStorage<RespawnWhen>::get(i);
+        for (int i=0; i < Storage<RespawnWhen>::type::size(); i++) {
+            auto& respawn = Storage<RespawnWhen>::type::get(i);
 
-            auto ent = PackedStorage<RespawnWhen>::entity(i);
+            auto ent = Storage<RespawnWhen>::type::entity(i);
             auto& pos = World::getComponent<Position>(ent);
             auto& body = World::getComponent<Body>(ent);
 

@@ -2,6 +2,7 @@
 #define GAME_H
 #include <SDL3/SDL_render.h>
 
+#include "AnimationSystem.h"
 #include "BarrelMoveSystem.h"
 #include "BarrelSpawnSystem.h"
 #include "CollosionSystem.h"
@@ -50,12 +51,14 @@ namespace donkeykong {
         RespawnSystem respownSystem;
         BarrelSpawnSystem barrelSpawnSystem{tex, 3, 7.0f};
         CollosionSystem collosionSystem;
+        AnimationSystem animationSystem;
 
 
         bool gameLoop();
         void createEntities();
         void createPlatforms();
         void createLadders();
+
 
 
     };

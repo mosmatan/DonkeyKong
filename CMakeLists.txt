@@ -28,6 +28,8 @@ add_executable(BAGEL main.cpp
         BarrelSpawnSystem.cpp
         BarrelEntity.cpp
         CollosionSystem.h
+        AnimationSystem.h
+        Kong.h
 )
 
 set(SDL_STATIC ON)

@@ -57,6 +57,23 @@ namespace donkeykong {
         float height = 1.f;
     };
 
+    struct Animation {
+
+        enum class type {
+            MARIO,
+            BARREL,
+            KONG
+        };
+
+        Drawable** states_frames;
+        int statesCount;
+        int framesCount;
+
+        int currentState = 0;
+        int currentFrame = 0;
+        type animType;
+    };
+
 
 }
 
