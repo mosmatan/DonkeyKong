@@ -4,6 +4,8 @@
 
 #include "BarrelSpawnSystem.h"
 
+#include <iostream>
+
 #include "bagel.h"
 
 using namespace bagel;

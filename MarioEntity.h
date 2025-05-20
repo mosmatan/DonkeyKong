@@ -2,7 +2,7 @@
 #define MARIOENTITY_H
 #include "bagel.h"
 #include "Components.h"
-#include "DonkeyKongGame.h"
+#include "Game.h"
 #include "InputSystem.h"
 
 using namespace bagel;
@@ -11,7 +11,6 @@ namespace donkeykong {
 
     class MarioEntity : NoInstance{
 
-    private:
         static constexpr float TEX_SCALE_WIDTH_MARIO = 1.6f;
         static constexpr float TEX_SCALE_HEIGHT_MARIO = 1.6f;
         static constexpr float MARIO_BODY_WIDTH = 14;
@@ -23,17 +22,17 @@ namespace donkeykong {
 
             Entity mario = Entity::create();
 
-            Position position{120,650};
+            Position position{125,575};
 
             b2BodyDef marioBodyDef = b2DefaultBodyDef();
             marioBodyDef.type = b2_dynamicBody;
-            marioBodyDef.position = {position.x / DonkeyKongGame::BOX_SCALE, position.y / DonkeyKongGame::BOX_SCALE};
-            b2BodyId marioBody = b2CreateBody(DonkeyKongGame::boxWorld, &marioBodyDef);
+            marioBodyDef.position = {position.x / Game::BOX_SCALE, position.y / Game::BOX_SCALE};
+            b2BodyId marioBody = b2CreateBody(Game::boxWorld, &marioBodyDef);
 
             b2ShapeDef padShapeDef = b2DefaultShapeDef();
             padShapeDef.density = 1;
 
-            b2Polygon padBox = b2MakeBox(MARIO_BODY_WIDTH/ DonkeyKongGame::BOX_SCALE/2, MARIO_BODY_HEIGHT/DonkeyKongGame::BOX_SCALE/2);
+            b2Polygon padBox = b2MakeBox(MARIO_BODY_WIDTH/ Game::BOX_SCALE/2, MARIO_BODY_HEIGHT/Game::BOX_SCALE/2);
             b2CreatePolygonShape(marioBody, &padShapeDef, &padBox);
 
             mario.add<Position>(position);
@@ -47,8 +46,9 @@ namespace donkeykong {
                 });
             mario.add<Moveable>({0,0});
             mario.add<Body>({marioBody});
+            mario.add<CollosionDetector>({0, MARIO_BODY_WIDTH , MARIO_BODY_HEIGHT / 3});
 
-            mario.add<PlayerControl>({false, false, 5.0f, 7.0f, 3.5f});
+            mario.add<PlayerControl>({false, false, 8.0f, 7.0f, 3.5f});
 
             return mario;
         }

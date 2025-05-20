@@ -63,8 +63,8 @@ build CMakeFiles/BAGEL.dir/tests.cpp.o: CXX_COMPILER__BAGEL_unscanned_Debug /Use
   OBJECT_DIR = CMakeFiles/BAGEL.dir
   OBJECT_FILE_DIR = CMakeFiles/BAGEL.dir
 
-build CMakeFiles/BAGEL.dir/DonkeyKongGame.cpp.o: CXX_COMPILER__BAGEL_unscanned_Debug /Users/matanmoskovich/Desktop/DonkeyKong/DonkeyKongGame.cpp || cmake_object_order_depends_target_BAGEL
-  DEP_FILE = CMakeFiles/BAGEL.dir/DonkeyKongGame.cpp.o.d
+build CMakeFiles/BAGEL.dir/Game.cpp.o: CXX_COMPILER__BAGEL_unscanned_Debug /Users/matanmoskovich/Desktop/DonkeyKong/Game.cpp || cmake_object_order_depends_target_BAGEL
+  DEP_FILE = CMakeFiles/BAGEL.dir/Game.cpp.o.d
   FLAGS = -Wall -Wextra -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fPIE -fcolor-diagnostics
   INCLUDES = -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/SDL/include-revision -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/SDL/include -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/SDL_image/include -I/Users/matanmoskovich/Desktop/DonkeyKong/lib/box2d/src/../include -I/Users/matanmoskovich/Desktop/DonkeyKong/cmake-build-debug/lib/box2d/src
   OBJECT_DIR = CMakeFiles/BAGEL.dir
@@ -106,7 +106,7 @@ build CMakeFiles/BAGEL.dir/BarrelEntity.cpp.o: CXX_COMPILER__BAGEL_unscanned_Deb
 #############################################
 # Link the executable BAGEL
 
-build BAGEL: CXX_EXECUTABLE_LINKER__BAGEL_Debug CMakeFiles/BAGEL.dir/main.cpp.o CMakeFiles/BAGEL.dir/tests.cpp.o CMakeFiles/BAGEL.dir/DonkeyKongGame.cpp.o CMakeFiles/BAGEL.dir/RenderSystem.cpp.o CMakeFiles/BAGEL.dir/MarioEntity.cpp.o CMakeFiles/BAGEL.dir/BarrelSpawnSystem.cpp.o CMakeFiles/BAGEL.dir/BarrelEntity.cpp.o | lib/SDL/libSDL3.a lib/SDL_image/libSDL3_image.a lib/box2d/src/libbox2dd.a || lib/SDL/libSDL3.a lib/SDL_image/libSDL3_image.a lib/box2d/src/libbox2dd.a
+build BAGEL: CXX_EXECUTABLE_LINKER__BAGEL_Debug CMakeFiles/BAGEL.dir/main.cpp.o CMakeFiles/BAGEL.dir/tests.cpp.o CMakeFiles/BAGEL.dir/Game.cpp.o CMakeFiles/BAGEL.dir/RenderSystem.cpp.o CMakeFiles/BAGEL.dir/MarioEntity.cpp.o CMakeFiles/BAGEL.dir/BarrelSpawnSystem.cpp.o CMakeFiles/BAGEL.dir/BarrelEntity.cpp.o | lib/SDL/libSDL3.a lib/SDL_image/libSDL3_image.a lib/box2d/src/libbox2dd.a || lib/SDL/libSDL3.a lib/SDL_image/libSDL3_image.a lib/box2d/src/libbox2dd.a
   FLAGS = -Wall -Wextra -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LINK_FLAGS = -lpthread
   LINK_LIBRARIES = lib/SDL/libSDL3.a  lib/SDL_image/libSDL3_image.a  lib/box2d/src/libbox2dd.a  -lm  -framework CoreMedia  -framework CoreVideo  -framework Cocoa  -Xlinker -weak_framework -Xlinker UniformTypeIdentifiers  -framework IOKit  -framework ForceFeedback  -framework Carbon  -framework CoreAudio  -framework AudioToolbox  -framework AVFoundation  -framework Foundation  -framework GameController  -framework Metal  -framework QuartzCore  -Xlinker -weak_framework -Xlinker CoreHaptics  -Wl,-framework,ApplicationServices  -lobjc

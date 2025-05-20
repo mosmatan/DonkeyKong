@@ -7,7 +7,7 @@
 #include "bagel.h"
 #include "Components.h"
 #include "box2d/box2d.h"
-#include "DonkeyKongGame.h"
+#include "Game.h"
 
 
 using namespace bagel;

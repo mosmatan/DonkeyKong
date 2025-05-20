@@ -9,6 +9,7 @@ using namespace donkeykong;
 	};
 
 	BAGEL_STORAGE(RespawnWhen, PackedStorage)
+	BAGEL_STORAGE(CollosionDetector, PackedStorage)
 
 
 

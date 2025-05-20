@@ -10,8 +10,8 @@ add_executable(BAGEL main.cpp
         bagel.h
         tests.cpp
         bagel_cfg.h
-        DonkeyKongGame.cpp
-        DonkeyKongGame.h
+        Game.cpp
+        Game.h
         Components.h
         RenderSystem.cpp
         RenderSystem.h
@@ -27,6 +27,7 @@ add_executable(BAGEL main.cpp
         BarrelSpawnSystem.h
         BarrelSpawnSystem.cpp
         BarrelEntity.cpp
+        CollosionSystem.h
 )
 
 set(SDL_STATIC ON)

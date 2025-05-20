@@ -52,7 +52,6 @@ public:
                 for (const auto& ladder : ladders) {
                     ladder_index++;
                     if (ladder.isEntityOnLadder(pos.x, pos.y)) {
-                        std::cout << "is on ladder: " << ladder_index << std::endl;
                         onLadder = true;
                         break;
                     }
@@ -61,9 +60,9 @@ public:
                 if (onLadder != control.isOnLadder) {
                     control.isOnLadder = onLadder;
                     if (onLadder) {
-                        std::cout << "Entity at (" << pos.x << "," << pos.y << ") is now on a ladder!" << std::endl;
+                        //std::cout << "Entity at (" << pos.x << "," << pos.y << ") is now on a ladder!" << std::endl;
                     } else {
-                        std::cout << "Entity at (" << pos.x << "," << pos.y << ") is no longer on a ladder." << std::endl;
+                        //std::cout << "Entity at (" << pos.x << "," << pos.y << ") is no longer on a ladder." << std::endl;
                     }
                 }
             }

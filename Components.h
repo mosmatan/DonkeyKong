@@ -51,7 +51,23 @@ namespace donkeykong {
         int respawn_x; // x position of the respawn point
     };
 
+    struct CollosionDetector {
+        int entities = 0;
+        float width =1.f;
+        float height = 1.f;
+    };
+
 
 }
+
+//TODO:
+// 1. Collosion
+// 2. Restart
+// 3. Game over
+// 4. Score
+// 5. Hearts
+// 6. Game over screen
+// 7. Animations
+
 
 #endif //COMPONENTS_H

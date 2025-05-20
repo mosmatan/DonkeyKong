@@ -1,8 +1,12 @@
-#include "DonkeyKongGame.h"
+#include "Game.h"
 
 
 int main() {
-	::donkeykong::DonkeyKongGame game;
-	game.run();
+	bool end =false;
+	do{
+		::donkeykong::Game game;
+		end  = game.run();
+	}while (end == true);
+
 	return 0;
 }
