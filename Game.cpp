@@ -103,9 +103,6 @@ namespace donkeykong {
         createPlatforms();
         createLadders();
         MarioEntity::create(tex);
-        // BarrelEntity::create(tex, 400, 120);
-        // BarrelEntity::create(tex, 500, 120);
-        // BarrelEntity::create(tex, 300, 120);
     }
 
     void Game::createPlatforms() {
