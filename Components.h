@@ -78,6 +78,9 @@ namespace donkeykong {
 
     };
 
+    struct BottomComponent {
+    };
+
 
 }
 

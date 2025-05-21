@@ -89,6 +89,10 @@ namespace donkeykong {
         bool entityIsPrincess = World::mask(entity).test(Component<PrincessComponent>::Bit);
         bool otherIsPrincess = World::mask(other).test(Component<PrincessComponent>::Bit);
 
+        // add check for bottom
+        bool entityIsBottom = World::mask(entity).test(Component<BottomComponent>::Bit);
+        bool otherIsBottom = World::mask(other).test(Component<BottomComponent>::Bit);
+
         // If Mario collided with a barrel
         if ((entityIsMario && otherIsBarrel) || (entityIsBarrel && otherIsMario)) {
             std::cout << "Mario hit a barrel! Restarting..." << std::endl;
@@ -102,6 +106,14 @@ namespace donkeykong {
             restartGame(entity, other, entityIsMario);
 
             // future feature add score
+        }
+
+        else if ( (entityIsBottom && otherIsMario) || (otherIsBottom && entityIsMario)) {
+            // Handle collision between barrel and bottom
+            std::cout << "Mario hit the bottom!" << std::endl;
+            restartGame(entity, other, entityIsMario);
+
+            // future feature
         }
         std::cout << "Collision detected between " << entityId << " and " << otherId << std::endl;
     }

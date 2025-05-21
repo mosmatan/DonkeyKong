@@ -3,6 +3,7 @@
 #include <SDL3_image/SDL_image.h>
 
 #include "Background.h"
+#include "GameBottom.h"
 #include "Kong.h"
 #include "MarioEntity.h"
 #include "PlatformEntity.h"
@@ -103,6 +104,7 @@ namespace donkeykong {
 
     void Game::createEntities() {
         Background::createBackground(ren, tex);
+        GameBottom::create(750);
         createPlatforms();
         createLadders();
         Kong::create(tex, 380, 155);

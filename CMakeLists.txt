@@ -31,6 +31,8 @@ add_executable(BAGEL main.cpp
         Kong.h
         CollosionSystem.cpp
         Princess.h
+        GameBottom.cpp
+        GameBottom.h
 )
 
 set(SDL_STATIC ON)
