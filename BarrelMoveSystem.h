@@ -68,6 +68,9 @@ public:
 
                     velocity.x = dir * barrelMove.moveSpeed;
                 }
+
+                velocity.y = velocity.y > 7.f ? 7.f : velocity.y;
+
                 b2Body_SetLinearVelocity(body.body, velocity);
             }
         }

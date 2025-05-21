@@ -43,6 +43,11 @@ public:
             _timeToSpawn = 0.0f;
         }
     }
+
+    void start(int barrels_count = 5, float spawn_interval = 5.0f) {
+        _barrelSpawnCount = barrels_count;
+        _timeToSpawn = 0.0f;
+    }
 };
 
 } // donkeykong
