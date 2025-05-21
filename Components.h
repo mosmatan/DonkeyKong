@@ -84,14 +84,5 @@ namespace donkeykong {
 
 }
 
-//TODO:
-// 1. Collosion
-// 2. Restart
-// 3. Game over
-// 4. Score
-// 5. Hearts
-// 6. Game over screen
-// 7. Animations
-
 
 #endif //COMPONENTS_H
