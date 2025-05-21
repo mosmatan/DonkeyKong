@@ -59,11 +59,6 @@ public:
 
                 if (onLadder != control.isOnLadder) {
                     control.isOnLadder = onLadder;
-                    if (onLadder) {
-                        //std::cout << "Entity at (" << pos.x << "," << pos.y << ") is now on a ladder!" << std::endl;
-                    } else {
-                        //std::cout << "Entity at (" << pos.x << "," << pos.y << ") is no longer on a ladder." << std::endl;
-                    }
                 }
             }
         }

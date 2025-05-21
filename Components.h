@@ -3,8 +3,7 @@
 
 #include <SDL3/SDL.h>
 
-//#include "box2d/math_functions.h"
-//#include "lib/box2d/src/body.h"
+#include "box2d/math_functions.h"
 
 #include <box2d/box2d.h>
 
@@ -62,7 +61,8 @@ namespace donkeykong {
         enum class type {
             MARIO,
             BARREL,
-            KONG
+            KONG,
+            PRINCESS
         };
 
         Drawable** states_frames;
@@ -72,6 +72,10 @@ namespace donkeykong {
         int currentState = 0;
         int currentFrame = 0;
         type animType;
+    };
+
+    struct PrincessComponent {
+
     };
 
 

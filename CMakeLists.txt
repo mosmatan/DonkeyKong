@@ -16,7 +16,6 @@ add_executable(BAGEL main.cpp
         RenderSystem.cpp
         RenderSystem.h
         Background.h
-        MarioEntity.cpp
         MarioEntity.h
         PhysicsSystem.h
         PlatformEntity.h
@@ -30,6 +29,8 @@ add_executable(BAGEL main.cpp
         CollosionSystem.h
         AnimationSystem.h
         Kong.h
+        CollosionSystem.cpp
+        Princess.h
 )
 
 set(SDL_STATIC ON)

@@ -63,7 +63,7 @@ namespace donkeykong {
                 });
             mario.add<Moveable>({0,0});
             mario.add<Body>({marioBody});
-            mario.add<CollosionDetector>({0, MARIO_BODY_WIDTH , MARIO_BODY_HEIGHT / 3});
+            mario.add<CollosionDetector>({0, MARIO_BODY_WIDTH , MARIO_BODY_HEIGHT / 2});
 
             mario.add<PlayerControl>({false, false, 8.0f, 3.0f, 1.5f});
             mario.add<Animation>({MARIO_ANIMATION,2,4,1,0, Animation::type::MARIO});

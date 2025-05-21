@@ -6,6 +6,7 @@
 #include "Kong.h"
 #include "MarioEntity.h"
 #include "PlatformEntity.h"
+#include "Princess.h"
 
 using namespace bagel;
 
@@ -106,6 +107,7 @@ namespace donkeykong {
         createLadders();
         Kong::create(tex, 380, 155);
         MarioEntity::create(tex);
+        Princess::create(tex, 555, 197);
 
     }
 
